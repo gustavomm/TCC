@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 2</title>
+    <script type='text/javascript' src="../js/Tela2.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body onload="carregar_dados()">
+        <h2 class="center">BACI</h2>
+        <h3>Porcentagem de itens respondidos</h3>
+        <h3>Tempo</h3>
+        <fieldset>
+            <legend>
+                Paciente:
+                <a id="nome"> </a>
+            </legend>
+            <form onsubmit="proximo(this);">
+				<div>
+                <div>Data de aplicação do teste: <input type="date" id="dataAplicacao" required></div><br>
+                <div>Nome do avaliado: <input type="text" id="nomeAvaliado" readonly></div><br>
+                <div>Data de nascimento: <input type="date" id="dataNascimento" onchange="calcular()" required></div><br>
+                <div>Idade: <textarea rows="1" cols="3" readonly id = "idade"></textarea> </div><br>
+                <div>
+                        Lateralidade:
+                        <input type="radio" name="lateralidade" value="destro" id="destro" required> Destro
+                        <input type="radio" name="lateralidade" value="canhoto" id="canhoto"> Canhoto
+                </div><br>
+                <div>
+                        Escolaridade:
+                        <input type="radio" name="escolaridade" value="analfabeto"  id="analfabeto" required> Analfabeto/nunca frequentou escola
+                        <input type="radio" name="escolaridade" value="inicio" id="inicio" > 0 à 3 anos de escolarização
+                        <input type="radio" name="escolaridade" value="medio" id="medio" > 4 à 8 anos de escolarização
+                        <input type="radio" name="escolaridade" value="superior" id="superior" > mais de 8 anos de escolarização
+                </div><br>
+                <div>Trabalho: <input type="text" required id="trabalho"></div><br>
+                <div>
+                        Trabalho Atual:
+                        <input type="radio" name="trabalhoAtual" value="aposentado" id="aposentado"required> não, porque está aposentado
+                        <input type="radio" name="trabalhoAtual" value="desempregado" id="desempregado"> não porque está desempregado/licenciado
+                        <input type="radio" name="trabalhoAtual" value="trabalhando" id="trabalhando"> sim, está trabalhando
+                </div><br>
+                <div>Natural de que estado/cidade: <input type="text" required id="naturalidade"></div><br>
+                <div>
+                        Sexo:
+                        <input type="radio" name="sexo" value="masculino" id="masculino" required> Masculino
+                        <input type="radio" name="sexo" value="feminino" id="feminino"> Feminino
+                </div><br>
+                <div>
+                        Possui limitação corporal visível?
+                        <input type="radio" name="limitacaoCorporal" value="simCorporal" id="simCorporal" required> Sim
+                        <input type="radio" name="limitacaoCorporal" value="naoCorporal" id="naoCorporal"> Nao
+                </div><br>
+                <div >
+                        Possui problemas visual ou usa óculos?
+                        <input type="radio" name="problemaVisual" value="simVisivel" id="simVisivel" required> Sim
+                        <input type="radio" name="problemaVisual" value="naoVisivel" id="naoVisivel"> Nao
+                </div>
+				</div>
+                <br><br>
+                <button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+                <br><br>
+                <button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+                <input type="submit" value="Submit/Próximo" class="button">
+            </form>
+        </fieldset>
+</body>
+</html>

@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="paciente">
+        <!--Tela 1-->
+
+        <!--Tela 2-->
+
+        <!--Tela 3-->
+
+        <!--Tela 4-->
+
+        <!--Tela 5-->
+
+        <!--Tela 6-->
+
+        <!--Tela 7-->
+
+        <!--Tela 8-->
+
+        <!--Tela 9-->
+
+        <!--Tela 10-->
+
+        <!--Tela 11-->
+
+        <!--Tela 12-->
+
+        <!--Tela 13-->
+
+        <!--Tela 14-->
+
+        <!--Tela 15-->
+
+        <!--Tela 16-->
+
+        <!--Tela 17-->
+
+        <!--Tela 18-->
+
+        <!--Tela 19-->
+
+        <!--Tela 20-->
+
+        <!--Tela 21-->
+
+        <!--Tela 22-->
+
+        <!--Tela 23-->
+
+        <!--Tela 24-->
+
+        <!--Tela 25-->
+
+        <!--Tela 26-->
+
+        <!--Tela 27-->
+
+        <!--Tela 28-->
+
+        <!--Tela 29-->
+
+        <!--Tela 30-->
+
+        <!--Tela 31-->
+
+        <!--Tela 32-->
+
+        <!--Tela 33-->
+
+        <!--Tela 34-->
+
+        <!--Tela 35-->
+
+        <!--Tela 36-->
+
+        <!--Tela 37-->
+
+        <!--Tela 38-->
+
+        <!--Tela 39-->
+
+        <!--Tela 40-->
+
+        <!--Tela 41-->
+
+        <!--Tela 42-->
+
+        <!--Tela 43-->
+
+        <!--Tela 44-->
+
+        <!--Tela 45-->
+
+        <!--Tela 46-->
+
+        <!--Tela 47-->
+
+        <!--Tela 48-->
+
+        <!--Tela 49-->
+
+        <!--Tela 50-->
+
+        <!--Tela 51-->
+
+        <!--Tela 52-->
+
+        <!--Tela 53-->
+
+        <!--Tela 54-->
+        <!--Imagens-->
+
+        <!--Tela 55-->
+        <xs:element name="primeiraLista">
+            <xs:element name="flor" type="boolean"></xs:element>
+            <xs:element name="gato" type="boolean"></xs:element>
+            <xs:element name="vaso" type="boolean"></xs:element>
+            <xs:element name="pincel" type="boolean"></xs:element>
+            <xs:element name="coelho" type="boolean"></xs:element>
+            <xs:element name="violao" type="boolean"></xs:element>
+            <xs:element name="dado" type="boolean"></xs:element>
+            <xs:element name="batom" type="boolean"></xs:element>
+            <xs:element name="prato" type="boolean"></xs:element>
+            <xs:element name="bolaGude" type="boolean"></xs:element>
+        </xs:element>
+
+        <!--Tela 56-->
+        <!--Imagens-->
+
+        <!--Tela 57-->
+        <xs:element name="segundaLista">
+            <xs:element name="prato" type="boolean"></xs:element>
+            <xs:element name="coelho" type="boolean"></xs:element>
+            <xs:element name="batom" type="boolean"></xs:element>
+            <xs:element name="dado" type="boolean"></xs:element>
+            <xs:element name="gato" type="boolean"></xs:element>
+            <xs:element name="vaso" type="boolean"></xs:element>
+            <xs:element name="bolaGude" type="boolean"></xs:element>
+            <xs:element name="violao" type="boolean"></xs:element>
+            <xs:element name="pincel" type="boolean"></xs:element>
+            <xs:element name="flor" type="boolean"></xs:element>
+        </xs:element>
+        <!--Tela 58-->
+        <!--Imagens-->
+
+        <!--Tela 59-->
+        <xs:element name="terceiraLista">
+            <xs:choice>
+                <xs:element name="dado" type="boolean"></xs:element>
+                <xs:element name="violao" type="boolean"></xs:element>
+                <xs:element name="bolaGude" type="boolean"></xs:element>
+                <xs:element name="flor" type="boolean"></xs:element>
+                <xs:element name="batom" type="boolean"></xs:element>
+                <xs:element name="prato" type="boolean"></xs:element>
+                <xs:element name="pincel" type="boolean"></xs:element>
+                <xs:element name="coelho" type="boolean"></xs:element>
+                <xs:element name="gato" type="boolean"></xs:element>
+                <xs:element name="vaso" type="boolean"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 60-->
+        <xs:element name="coresBandeiraBrasil">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="estacaoAno">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="operacaoMatematica">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 61-->
+        <xs:element name="molho">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 62-->
+        <xs:element name="linhaCostura">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 63-->
+        <xs:element name="bolsa">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 64-->
+        <xs:element name="relogio">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 65-->
+        <xs:element name="bone">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 66-->
+        <xs:element name="cadeira">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 67-->
+        <xs:element name="bola">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 68-->
+        <xs:element name="meias">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+
+        <!--Tela 69-->
+        <xs:element name="caneca">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 70-->
+        <xs:element name="chaveFenda">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 71-->
+        <xs:element name="gol">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="irmao">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="varal">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="dele">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="celular">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="banco">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="baralho">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="queijo">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="baustre">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="galfo">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 72-->
+        <xs:element name="principaisRefeicoes">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="estacaoAno">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="diasSemana">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 73-->
+        <xs:element name="mentiraPernaCurta">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="chorarLeiteDerramado">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="cavaloDado">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="jantamosComoReis">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <xs:element name="perdidoCegoTiroteio">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 74-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 75-->
+        <xs:element name="Sorvete">
+            <xs:choice>
+                <xs:element name="sorvete" type="boolean" fixed="1"></xs:element>
+                <xs:element name="chocolate" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+
+        <!--Tela 76-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 77-->
+        <xs:element name="passaroPousouArvore">
+            <xs:choice>
+                <xs:element name="passaroVoando" type="boolean" fixed="0"></xs:element>
+                <xs:element name="passaroPousouNaTerra" type="boolean" fixed="0"></xs:element>
+                <xs:element name="passaroPousouNaArvore" type="boolean" fixed="1"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+
+        <!--Tela 78-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 79-->
+        <xs:element name="mulherPassaBatom">
+            <xs:choice>
+                <xs:element name="mulherPenteiaCabelo" type="boolean" fixed="0"></xs:element>
+                <xs:element name="mulhePassaBaton" type="boolean" fixed="1"></xs:element>
+                <xs:element name="mulherColocaColar" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 80-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 81-->
+        <xs:element name="mulherAcariciouGatoBebiaLeite">
+            <xs:choice>
+                <xs:element name="mulherOlhaGato" type="boolean" fixed="0"></xs:element>
+                <xs:element name="mulherOlhaGatoBebiaLeite" type="boolean" fixed="0"></xs:element>
+                <xs:element name="mulherAcariciaGatoBebiaLeite" type="boolean" fixed="1"></xs:element>
+                <xs:element name="mulherAcariciaGata" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 82-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 83-->
+        <xs:element name="rapazAssinouCheque">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 84-->
+        <xs:element name="mariaAtendeuTelefone">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 85-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 86-->
+        <xs:element name="lenha">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 87-->
+        <xs:element name="mao">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 88-->
+        <xs:element name="fralda">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 89-->
+        <xs:element name="do">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 90-->
+        <xs:element name="dinheiro">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 91-->
+        <xs:element name="seguranca">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 92-->
+        <xs:element name="ilha">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 93-->
+        <xs:element name="cravo">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 94-->
+        <xs:element name="melado">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 95-->
+        <xs:element name="violino">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 96-->
+        <xs:element name="jerra">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 97-->
+        <xs:element name="cesfagem">
+            <xs:choice>
+                <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 98-->
+        <!--Descricao das perguntas seguintes-->
+
+        <!--Tela 99-->
+        <xs:element name="flor">
+            <xs:choice>
+                <xs:element name="uva" type="boolean" fixed="0"></xs:element>
+                <xs:element name="folha" type="boolean" fixed="0"></xs:element>
+                <xs:element name="flor" type="boolean" fixed="1"></xs:element>
+                <xs:element name="arvore" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 100-->
+        <xs:element name="mulherEquilibraBandejaPratos">
+            <xs:choice>
+                <xs:element name="seguraBandejaPrato" type="boolean" fixed="0"></xs:element>
+                <xs:element name="seguraPrato" type="boolean" fixed="0"></xs:element>
+                <xs:element name="seguraBandeja" type="boolean" fixed="0"></xs:element>
+                <xs:element name="equilibraBandejaPrato" type="boolean" fixed="1"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 101-->
+        <xs:element name="rapazEscreveFalaTelefone">
+            <xs:choice>
+                <xs:element name="telefone" type="boolean" fixed="0"></xs:element>
+                <xs:element name="escreve" type="boolean" fixed="0"></xs:element>
+                <xs:element name="escreveFalaTelefone" type="boolean" fixed="1"></xs:element>
+                <xs:element name="escreveFalaPessoa" type="boolean" fixed="0"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 102-->
+        <!--Eh a mesma pergunta da questao 101-->
+
+        <!--Tela 103-->
+        <xs:element name="frasesCopiar">
+            <xs:element name="forca">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="asa">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="lombo">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="seta">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="cachorro">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="ceu">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="campo">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="andar">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="quadrado">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="seculo">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="destrache">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+
+            <xs:element name="aupora">
+                <xs:choice>
+                    <xs:element name="certo" type="boolean" fixed="1"></xs:element>
+                    <xs:element name="errado" type="boolean" fixed="0"></xs:element>
+                </xs:choice>
+            </xs:element>
+        </xs:element>
+        <!--Tela 104-->
+        <!--No documento as duas perguntas estao na 104-->
+        <xs:element name="palavrasComecemLetraF" type="string"></xs:element>
+        <xs:element name="tiposFrutas" type="string"></xs:element>
+
+        <!--Tela 105-->
+        <!--Apenas texto descrevendo o que devera ser feito nas perguntas seguintes-->
+
+        <!--Tela 106-->
+        <xs:element name="associacaoCaderno">
+            <xs:choice>
+                <xs:element name="maisDeUmaCor" type="boolean"></xs:element>
+                <xs:element name="apenasNumeros" type="boolean"></xs:element>
+                <xs:element name="sempreMesmaCor" type="boolean"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 107-->
+        <xs:element name="associacaoAlfabeto">
+            <xs:choice>
+                <xs:element name="maisDeUmaCor" type="boolean"></xs:element>
+                <xs:element name="apenasNumeros" type="boolean"></xs:element>
+                <xs:element name="sempreMesmaCor" type="boolean"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 108-->
+        <xs:element name="associacaoNumero">
+            <xs:choice>
+                <xs:element name="maisDeUmaCor" type="boolean"></xs:element>
+                <xs:element name="apenasNumeros" type="boolean"></xs:element>
+                <xs:element name="sempreMesmaCor" type="boolean"></xs:element>
+            </xs:choice>
+        </xs:element>
+
+        <!--Tela 109-->
+        <xs:element name="outrasAssociacoes" type="xs:string"/>
+    </xs:element>
+</xs:schema>

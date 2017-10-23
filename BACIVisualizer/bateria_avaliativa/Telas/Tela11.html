@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+			<title>Tela 11</title>   
+			<script type='text/javascript' src="../js/Tela11.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		</head>
+
+		<body onload="carregar_dados();">
+			<h3 class="center">Nome do Instrumento</h3>
+			<h3>Porcentagem de itens respondidos</h3>
+			<fieldset>
+				<legend>Paciente: 
+					<a id="nome"> </a>
+				</legend>
+				<h4 class="center"> Triagem para queixa de memória </h4>
+				<br/>
+				<form onsubmit="proximo(this);">
+					<div>
+						<div>
+							Com frequência você decide fazer alguma coisa e em poucos minutos depois se esquece de fazê-la?<br/>
+							<input type="radio" name="frequencia" id="primeiro1" required/> sim<br/>
+							<input type="radio" name="frequencia" id="segundo1"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Você tem dificuldade para reconhecer um lugar que você já visitou antes?<br/>
+							<input type="radio" name="reconhecer" id="primeiro2" required/> sim<br/>
+							<input type="radio" name="reconhecer" id="segundo2"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece de uma atividade antes de terminar. Como buscar um remédio e esquecer de tomar, esquecer panelas no fogo, etc?<br/>
+							<input type="radio" name="atividade" id="primeiro3" required/> sim<br/>
+							<input type="radio" name="atividade" id="segundo3"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você esquece alguma coisa que acabaram de te contar?<br/>
+							<input type="radio" name="acabaram" id="primeiro4" required/> sim<br/>
+							<input type="radio" name="acabaram" id="segundo4"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você precisa anotar seus compromissos em agendas ou celular para se lembrar deles?<br/>
+							<input type="radio" name="anotar" id="primeiro5" required/> sim<br/>
+							<input type="radio" name="anotar" id="segundo5"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece de compromissos se alguém não te lembrar?<br/>
+							<input type="radio" name="compromissos" id="primeiro6" required/> sim<br/>
+							<input type="radio" name="compromissos" id="segundo6"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece dos nomes de pessoas conhecidas?<br/>
+							<input type="radio" name="nomepessoas" id="primeiro7" required/> sim<br/>
+							<input type="radio" name="nomepessoas" id="segundo7"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece dos rostos/aparência de pessoas conhecidas?<br/>
+							<input type="radio" name="rostopessoas" id="primeiro8" required/> sim<br/>
+							<input type="radio" name="rostopessoas" id="segundo8"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece de coisas que aconteceram recentemente (últimos dias)?<br/>
+							<input type="radio" name="recentemente" id="primeiro9" required/> sim<br/>
+							<input type="radio" name="recentemente" id="segundo9"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece de coisas que aconteceram há mais tempo (mais de 10 anos)?<br/>
+							<input type="radio" name="dezanos" id="primeiro10" required/> sim<br/>
+							<input type="radio" name="dezanos" id="segundo10"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você repete a mesma história para a mesma pessoa, sem perceber que já a contou antes?<br/>
+							<input type="radio" name="historia" id="primeiro11" required/> sim<br/>
+							<input type="radio" name="historia" id="segundo11"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você esquece o lugar onde recém colocou alguma coisa, como uma revista ou óculos?<br/>
+							<input type="radio" name="objeto" id="primeiro12" required/> sim<br/>
+							<input type="radio" name="objeto" id="segundo12"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você se esquece de dar um recado que lhe pediram para transmitir?<br/>
+							<input type="radio" name="recado" id="primeiro13" required/> sim<br/>
+							<input type="radio" name="recado" id="segundo13"/> não<br/>
+						</div>
+						<br/>
+						<div>
+							Com frequência você acha que sua memória é ruim?<br/>
+							<input type="radio" name="memoria" id="primeiro14" required/> sim<br/>
+							<input type="radio" name="memoria" id="segundo14"/> não<br/>
+						</div>
+						<br/>	
+					</div>
+					<br/>
+					<br/>			
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br/>
+					<br/>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button"/>	
+				</form>
+			</fieldset>
+		</body>
+	</html>
+	

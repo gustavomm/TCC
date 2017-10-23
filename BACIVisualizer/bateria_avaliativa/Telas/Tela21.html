@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 21</title>
+		<script type='text/javascript' src="../js/Tela21.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<form onsubmit="proximo(this);">
+				<div>
+					<h4 class="center"> Encadeamento De Pensamento </h4>
+					<br/>
+					<p>Pontuação:</p>
+					<div>	
+						<br />
+						<p> Ao ver as figuras, o avaliando lembrou da história: </p>
+						<input type="radio" name="lembrar" id="lembrarNao" required/> Não<br/>
+						<input type="radio" name="lembrar" id="lembrarSim"/> Sim	<br/>			
+					</div>
+					<div>
+						<br />
+						<p> Organizou corretamente as figuras:    </p>
+						<input type="radio" name="organizar" id="orgNao" required/> Não<br/>
+						<input type="radio" name="organizar" id="orgSim"/> Sim<br/>
+						<input type="radio" name="organizar" id="orgAjuda"/> Consegue com ajuda<br/>
+					</div>
+					<div>		
+						<br />
+						<p> (Re)Contou a história ordenada e com coerência </p>
+						<input type="radio" name="ordenar" id="ordNao" required/> Não<br/>
+						<input type="radio" name="ordenar" id="ordSim"/> Sim<br/>
+						<input type="radio" name="ordenar" id="ordAjuda"/> Consegue com ajuda<br/>
+					</div>
+					<div>
+						<br />
+						<p> Fez apenas a descrição de cada cena: </p>
+						<input type="radio" name="descrever" id="descNao" required/> Não<br/>
+						<input type="radio" name="descrever" id="descSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> História Contada com Início – Meio – Fim: </p>
+						<input type="radio" name="contar" id="contarNao" required/> Não<br/>
+						<input type="radio" name="contar" id="contarSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> Houve presença de intrusões de pensamento: </p>
+						<input type="radio" name="intrusao" id="intNao" required/> Não<br/>
+						<input type="radio" name="intrusao" id="intSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> Houve presença de confabulação: </p>
+						<input type="radio" name="confabular" id="confNao" required/> Não<br/>
+						<input type="radio" name="confabular" id="confSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> A fala foi coerente e fluida: </p>
+						<input type="radio" name="coerencia" id="coeNao" required/> Não<br/>
+						<input type="radio" name="coerencia" id="coeSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> Houve presença de longas pausas ou hesitações na fala: </p>
+						<input type="radio" name="pausa" id="pausaNao" required/> Não<br/>
+						<input type="radio" name="pausa" id="pausaSim"/> Sim<br/>
+					</div>
+					<div>
+						<br />
+						<p> Repetição excessiva de palavras (ecolalia): </p>
+						<input type="radio" name="repetir" id="repNao" required/> Não<br/>
+						<input type="radio" name="repetir" id="repSim"/> Sim<br/>
+					</div>
+					Observações: <br/>					
+					<textarea rows="4" cols="50" maxlength="1000" id="observacoes"></textarea>
+				</div>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" id="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

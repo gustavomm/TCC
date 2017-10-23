@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 26</title>
+	<script type='text/javascript' src="../js/Tela26.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body onload="carregar_dados();">
+        <h3>Nome do Instrumento</h3>
+        <h3>Porcentagem de itens respondidos</h3>
+        <fieldset>
+		    <legend>
+                Paciente:
+                <a id="nome"> </a>
+            </legend>
+                <form onsubmit="proximo(this);">
+                    <h3>Tarefas de Percepção Visual</h3><br/>
+					<p>Leia para o avaliando:</p><br/>
+					<h3>Abaixo apresentaremos algumas imagens, sua tarefa é ver se tais imagens são iguais ou não.</h3>
+					<br><br>
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button">
+                </form>
+        </fieldset>
+</body>
+</html>

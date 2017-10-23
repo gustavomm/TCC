@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Tela 9</title>
+	   <script type='text/javascript' src="../js/Tela9.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+   </head>
+	<body onload = "carregar_dados();">
+		<fieldset>
+		<legend>Paciente: 
+			<a id="nome"> </a>
+			</legend>
+			<h3 class="center"><b>Escala de Depressão Geriátrica de Yesavage em versão reduzida (GDS-15)</b><h3/><br></br>
+			Referência: Almeida OP, Almeida SA. Confiabilidade da versão brasileira da Escala de Depressão em Geriatria (GDS) versão reduzida. Arq Neuro-Psiquiatr. 1999;57:421-6<BR></BR>
+			<form onsubmit="proximo(this);">
+					<div>
+						<font size = "4">
+						<pre>                                                                    Não   Sim </pre>
+						<pre>1. Você está satisfeito com sua ida?                                1     0     Ponto:<input type="checkbox" name="ex1" id="ex1" onclick = "atualizarPontos('1');" /> <br /></pre>
+						<pre>2. Você deixou muitos de seus interesses e atividades?              0     1     Ponto:<input type="checkbox" name="ex2" id="ex2" onclick = "atualizarPontos('2');" /> <br /></pre>
+						<pre>3. Você sente que sua vida está vazia ?                             0     1     Ponto:<input type="checkbox" name="ex3" id="ex3" onclick = "atualizarPontos('3');" /> <br /></pre>
+						<pre>4. Você se aborrece com frequência ?                                0     1     Ponto:<input type="checkbox" name="ex4" id="ex4" onclick = "atualizarPontos('4');" /> <br /></pre>
+						<pre>5. Você se sente de bom humor a maior parte do tempo ?              1     0     Ponto:<input type="checkbox" name="ex5" id="ex5" onclick = "atualizarPontos('5');" /> <br /></pre>
+						<pre>6. Você tem medo que algum mal vá lhe acontecer ?                   0     1     Ponto:<input type="checkbox" name="ex6" id="ex6" onclick = "atualizarPontos('6');" /> <br /></pre>
+						<pre>7. Você se sente feliz a maior parte do tempo ?                     1     0     Ponto:<input type="checkbox" name="ex7" id="ex7" onclick = "atualizarPontos('7');" /> <br /></pre>
+						<pre>8. Você sente que sua situação não tem saida ?                      0     1     Ponto:<input type="checkbox" name="ex8" id="ex8" onclick = "atualizarPontos('8');" /> <br /></pre>
+						<pre>9. Você prefere ficar em casa do que sair e fazer coisas novas ?    0     1     Ponto:<input type="checkbox" name="ex9" id="ex9" onclick = "atualizarPontos('9');" /> <br /></pre>
+						<pre>10. Você se sente com mais problema de memória do que a maioria ?   0     1     Ponto:<input type="checkbox" name="ex10" id="ex10" onclick = "atualizarPontos('10');" /> <br /></pre>
+						<pre>11. Você acha maravilhoso estar vivo ?                              1     0     Ponto:<input type="checkbox" name="ex11" id="ex11" onclick = "atualizarPontos('11');" /> <br /></pre>
+						<pre>12. Você se sente um inútil nas atuas circunstâncias ?              0     1     Ponto:<input type="checkbox" name="ex12" id="ex12" onclick = "atualizarPontos('12');" /> <br /></pre>
+						<pre>13. Você se sente cheio de energia ?                                1     0     Ponto:<input type="checkbox" name="ex13" id="ex13" onclick = "atualizarPontos('13');" /> <br /></pre>
+						<pre>14. Você achoa que sua situação é sem esperanças ?                  0     1     Ponto:<input type="checkbox" name="ex14" id="ex14" onclick = "atualizarPontos('14');" /> <br /></pre>
+						<pre>15. Você sente que a maioria das pessoas está melhor do que você ?  0     1     Ponto:<input type="checkbox" name="ex15" id="ex15" onclick = "atualizarPontos('15');" /> <br /></pre>
+						</font>
+					</div>
+				<br>Triagem para Depressão (Escala de Depressão Geriátrica de Yesavage em versão reduzida)
+				<br>Total de pontos: <input type="number"  id="pontos" value="0" readonly min = "0" max = "15">/15
+				<br>Classificação: 
+				<br><br>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				 <br><br>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button">
+			</form>	
+		</fieldset>
+	</body>
+</html>

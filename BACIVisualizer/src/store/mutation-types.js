@@ -1,0 +1,5 @@
+// Patients
+export const ADD_PATIENT = 'ADD_PATIENT';
+export const REMOVE_ALL_PATIENTS = 'REMOVE_ALL_PATIENTS';
+export const PERSIST_ALL_PATIENTS = 'PERSIST_ALL_PATIENTS';
+export const LOAD_PATIENTS = 'LOAD_PATIENTS';

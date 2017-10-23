@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 60</title>
+		<script type='text/javascript' src="../js/Tela60.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Memória – semântica</h3>
+			<form onsubmit="proximo(this);">
+				<br/>
+				<br/>
+				<table style="width:100%">
+					<tr>
+						<td width="310">Pergunta 1: Quais as cores da Bandeira do Brasil?</td> 
+						<td>
+							Certo:<input type="radio" class="correto" name="p1" id="p1correto"/>
+							Errado:<input type="radio" name="p1" id="p1errado"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="310">Pergunta 2: Quais são as estações do ano?</td> 
+						<td>
+							Certo:<input type="radio" class="correto" name="p2" id="p2correto"/>
+							Errado:<input type="radio" name="p2" id="p2errado"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="310">Pergunta 3: Quais são as quatro operações matemáticas?</td> 
+						<td>
+							Certo:<input type="radio" class="correto" name="p3" id="p3correto"/>
+							Errado:<input type="radio" name="p3" id="p3errado"/>
+						</td>
+					</tr>
+				</table>
+				<input type="hidden" name="pontuacao" id="pontuacao" value="0"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

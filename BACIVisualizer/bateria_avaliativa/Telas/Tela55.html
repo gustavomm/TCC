@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 55</title>
+		<script type='text/javascript' src="../js/Tela55.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3>Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<form onsubmit="proximo(this);">
+				<h3>Capacidade Matemática</h3>
+				<br/>
+				<br/>
+				<audio controls>
+					<source src="" type="audio/mp3"/>
+										Your browser does not support the audio element.
+				</audio>
+				<table style="width:100%">
+					<tr>
+						<td>
+							<b>Itens</b>
+						</td> 
+						<td>
+							<b>Acertos</b>
+						</td>
+					</tr>
+					<tr>
+						<td>100 - 7 =  </td> 
+						<td>
+							<input type="checkbox" name="ex1" id="ex1"/>
+						</td>
+					</tr>
+					<tr>
+						<td>98 – 5  =</td> 
+						<td>
+							<input type="checkbox" name="ex2" id="ex2"/>
+						</td>
+					</tr>
+					<tr>
+						<td>80 / 4 =</td> 
+						<td>
+							<input type="checkbox" name="ex3" id="ex3"/>
+						</td>
+					</tr>
+					<tr>
+						<td>25 / 5 = </td> 
+						<td>
+							<input type="checkbox" name="ex4" id="ex4"/>
+						</td>
+					</tr>
+					<tr>
+						<td>13 x 5 =</td> 
+						<td>
+							<input type="checkbox" name="ex5" id="ex5"/>
+						</td>
+					</tr>
+					<tr>
+						<td>18 x 7 =</td> 
+						<td>
+							<input type="checkbox" name="ex6" id="ex6"/>
+						</td>
+					</tr>
+					<tr>
+						<td>19 + 45 = </td> 
+						<td>
+							<input type="checkbox" name="ex7" id="ex7"/>
+						</td>
+					</tr>
+					<tr>
+						<td>20 + 16 =</td> 
+						<td>
+							<input type="checkbox" name="ex8" id="ex8"/>
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

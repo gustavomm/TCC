@@ -1,0 +1,63 @@
+<template>
+    <div class="row">
+        <div class="row">
+            <img class="materialboxed my-align" width="450" src="../../assets/images/screens/screen017.png" />
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <select disabled v-model="data.Tela17.pontuacao">
+                    <option value="empty"></option>
+                    <option value="1">Certo - 1 ponto</option>
+                    <option value="0">Errado - 0 pontos</option>
+                </select>
+                <label for="disabled">Pontuação</label>
+            </div>
+            <div class="input-field col s6">
+                <select disabled v-model="data.Tela17.comeco">
+                    <option value="empty"></option>
+                    <option value="quadrado">Começou pelo quadrado</option>
+                    <option value="triangulo">Começou pelo triângulo</option>
+                    <option value="outro">Começou por outro ponto</option>
+                </select>
+                <label for="disabled">Por onde começou</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+                <input disabled v-model="data.Tela17.faltar" type="text" class="validate">
+                <label for="disabled">Faltam partes</label>
+            </div>
+            <div class="input-field col s6">
+                <input disabled v-model="data.Tela17.sobrar" type="text" class="validate">
+                <label for="disabled">Há elementos que não estavam na imagem</label>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'Screen017',
+        props: {
+            data: {
+                type: Object,
+                default: function() {
+                    let data = {};
+                    data.Tela17 = {};
+                    return data;
+                },
+            },
+        },
+        mounted: function() {
+            $('select').material_select();
+            Materialize.updateTextFields();
+        },
+    };
+</script>
+
+<style lang="sass" scoped>
+.my-align
+    margin-left: auto
+    margin-right: auto
+</style>

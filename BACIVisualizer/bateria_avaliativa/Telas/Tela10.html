@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Tela 10</title>
+	   <script type='text/javascript' src="../js/Tela10.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+   </head>
+	<body onload="carregar_dados();">
+		<fieldset>
+		<legend>Paciente: 
+			<a id="nome"> </a>
+			</legend>
+			<h3 class="center"><b>Escala Brasileira de Solidão (UCLA-BR)</b></h3><br/>
+			Referências:<br/>
+			<font size = "tolerar">Barroso, Sabrina Martins, Andrade, Valéria Sousa de, Midgett, Aida Hutz, & Carvalho, Rubem Gomes Neves de. (1915). Evidências de validade da Escala Brasileira de Solidão UCLA. Jornal Brasileiro de Psiquiatria, 65(1), 67-65.
+			<br/>Barroso, Sabrina Martins, Andrade, Valéria Sousa de, & Oliveira, Nadyara Regina de. (1915). Escala Brasileira de Solidão: Análises de Resposta ao Item e definição dos pontos de corte. Jornal Brasileiro de Psiquiatria, 65(1), 66-71.</font>
+			<br/>
+			<form onsubmit="proximo(this);">
+			
+			<div>
+				<div>
+					Eu me sinto infeliz por fazer tantas coisas sozinho(a) <br/>
+					<input type="radio" name = "infeliz"   onclick = "atualizarPontos('nunca1', '1')"  id = "nunca1" required>Nunca<br/>
+					<input type="radio" name = "infeliz"  onclick = "atualizarPontos('raramente1', '1')"  id = "raramente1">Realmente<br/>
+					<input type="radio" name = "infeliz"  onclick = "atualizarPontos('algumasvezes1', '1')"  id = "algumasvezes1">Algumas vezes<br/>
+					<input type="radio" name = "infeliz"  onclick = "atualizarPontos('frequentemente1', '1')"  id = "frequentemente1">Frequentemente<br/>
+					<input type = "number" id = "infeliz"  hidden>
+				</div><br/>		
+				
+				<div>
+					Eu não tolero ficar tão sozinho(a).	<br/>
+					<input type="radio" name = "tolerar"   onclick = "atualizarPontos('nunca2', '2')"  id = "nunca2" required>Nunca<br/>
+					<input type="radio" name = "tolerar"  onclick = "atualizarPontos('raramente2', '2')"  id = "raramente2">Realmente<br/>
+					<input type="radio" name = "tolerar"  onclick = "atualizarPontos('algumasvezes2', '2')"  id = "algumasvezes2">Algumas vezes<br/>
+					<input type="radio" name = "tolerar"  onclick = "atualizarPontos('frequentemente2', '2')"  id = "frequentemente2">Frequentemente<br/>
+					<input type = "number" id = "tolerar"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu sinto que não tenho companhia.<br/>
+					<input type="radio" name = "companhia"   onclick = "atualizarPontos('nunca3', '3')"  id = "nunca3" required>Nunca<br/>
+					<input type="radio" name = "companhia"  onclick = "atualizarPontos('raramente3', '3')"  id = "raramente3">Realmente<br/>
+					<input type="radio" name = "companhia"  onclick = "atualizarPontos('algumasvezes3', '3')"  id = "algumasvezes3">Algumas vezes<br/>
+					<input type="radio" name = "companhia"  onclick = "atualizarPontos('frequentemente3', '3')"  id = "frequentemente3">Frequentemente<br/>
+					<input type = "number" id = "companhia"  hidden>
+				</div><br/>		
+				
+				<div>
+					Eu sinto que ninguém me compreende.<br/>
+					<input type="radio" name = "compreende"   onclick = "atualizarPontos('nunca4', '4')"  id = "nunca4" required>Nunca<br/>
+					<input type="radio" name = "compreende"  onclick = "atualizarPontos('raramente4', '4')"  id = "raramente4">Realmente<br/>
+					<input type="radio" name = "compreende"  onclick = "atualizarPontos('algumasvezes4', '4')"  id = "algumasvezes4">Algumas vezes<br/>
+					<input type="radio" name = "compreende"  onclick = "atualizarPontos('frequentemente4', '4')"  id = "frequentemente4">Frequentemente<br/>
+					<input type = "number" id = "compreende"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu fico esperando as pessoas me ligarem ou escreverem.<br/>	
+					<input type="radio" name = "esperando"   onclick = "atualizarPontos('nunca5', '5')"  id = "nunca5" required>Nunca<br/>
+					<input type="radio" name = "esperando"  onclick = "atualizarPontos('raramente5', '5')"  id = "raramente5">Realmente<br/>
+					<input type="radio" name = "esperando"  onclick = "atualizarPontos('algumasvezes5', '5')"  id = "algumasvezes5">Algumas vezes<br/>
+					<input type="radio" name = "esperando"  onclick = "atualizarPontos('frequentemente5', '5')"  id = "frequentemente5">Frequentemente<br/>
+					<input type = "number" id = "esperando"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu sinto que não tenho ninguém a quem eu possa recorrer.<br/>
+					<input type="radio" name = "recorrer"   onclick = "atualizarPontos('nunca6', '6')"  id = "nunca6" required>Nunca<br/>
+					<input type="radio" name = "recorrer"  onclick = "atualizarPontos('raramente6', '6')"  id = "raramente6">Realmente<br/>
+					<input type="radio" name = "recorrer"  onclick = "atualizarPontos('algumasvezes6', '6')"  id = "algumasvezes6">Algumas vezes<br/>
+					<input type="radio" name = "recorrer"  onclick = "atualizarPontos('frequentemente6', '6')"  id = "frequentemente6">Frequentemente<br/>
+					<input type = "number" id = "recorrer"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu não me sinto próximo(a) a ninguém.<br/>
+					<input type="radio" name = "proximoNinguem"   onclick = "atualizarPontos('nunca7', '7')"  id = "nunca7" required>Nunca<br/>
+					<input type="radio" name = "proximoNinguem"  onclick = "atualizarPontos('raramente7', '7')"  id = "raramente7">Realmente<br/>
+					<input type="radio" name = "proximoNinguem"  onclick = "atualizarPontos('algumasvezes7', '7')"  id = "algumasvezes7">Algumas vezes<br/>
+					<input type="radio" name = "proximoNinguem"  onclick = "atualizarPontos('frequentemente7', '7')"  id = "frequentemente7">Frequentemente<br/>
+					<input type = "number" id = "proximoNinguem"  hidden>
+				</div><br/>
+				
+				<div>
+					Sinto que meus interesses e ideias não são compartilhados por aqueles que me rodeiam.<br/>
+					<input type="radio" name = "rodeiam"   onclick = "atualizarPontos('nunca8', '8')"  id = "nunca8" required>Nunca<br/>
+					<input type="radio" name = "rodeiam"  onclick = "atualizarPontos('raramente8', '8')"  id = "raramente8">Realmente<br/>
+					<input type="radio" name = "rodeiam"  onclick = "atualizarPontos('algumasvezes8', '8')"  id = "algumasvezes8">Algumas vezes<br/>
+					<input type="radio" name = "rodeiam"  onclick = "atualizarPontos('frequentemente8', '8')"  id = "frequentemente8">Frequentemente<br/>
+					<input type = "number" id = "rodeiam"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu me sinto excluído(a).<br/>	
+					<input type="radio" name = "excluido"   onclick = "atualizarPontos('nunca9', '9')"  id = "nunca9" required>Nunca<br/>
+					<input type="radio" name = "excluido"  onclick = "atualizarPontos('raramente9', '9')"  id = "raramente9">Realmente<br/>
+					<input type="radio" name = "excluido"  onclick = "atualizarPontos('algumasvezes9', '9')"  id = "algumasvezes9">Algumas vezes<br/>
+					<input type="radio" name = "excluido"  onclick = "atualizarPontos('frequentemente9', '9')"  id = "frequentemente9">Frequentemente<br/>
+					<input type = "number" id = "excluido"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu me sinto completamente sozinho(a).<br/>	
+					<input type="radio" name = "sozinho"   onclick = "atualizarPontos('nunca10', '10')"  id = "nunca10" required>Nunca<br/>
+					<input type="radio" name = "sozinho"  onclick = "atualizarPontos('raramente10', '10')"  id = "raramente10">Realmente<br/>
+					<input type="radio" name = "sozinho"  onclick = "atualizarPontos('algumasvezes10', '10')"  id = "algumasvezes10">Algumas vezes<br/>
+					<input type="radio" name = "sozinho"  onclick = "atualizarPontos('frequentemente10', '10')"  id = "frequentemente10">Frequentemente<br/>
+					<input type = "number" id = "sozinho"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu sou incapaz de me aproximar e de me comunicar com as pessoas ao meu redor.<br/>
+					<input type="radio" name = "comunicar"   onclick = "atualizarPontos('nunca11', '11')"  id = "nunca11" required>Nunca<br/>
+					<input type="radio" name = "comunicar"  onclick = "atualizarPontos('raramente11', '11')"  id = "raramente11">Realmente<br/>
+					<input type="radio" name = "comunicar"  onclick = "atualizarPontos('algumasvezes11', '11')"  id = "algumasvezes11">Algumas vezes<br/>
+					<input type="radio" name = "comunicar"  onclick = "atualizarPontos('frequentemente11', '11')"  id = "frequentemente11">Frequentemente<br/>
+					<input type = "number" id = "comunicar"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu sinto que minhas relações sociais são superficiais.<br/>		
+					<input type="radio" name = "superficiais"   onclick = "atualizarPontos('nunca12', '12')"  id = "nunca12" required>Nunca<br/>
+					<input type="radio" name = "superficiais"  onclick = "atualizarPontos('raramente12', '12')"  id = "raramente12">Realmente<br/>
+					<input type="radio" name = "superficiais"  onclick = "atualizarPontos('algumasvezes12', '12')"  id = "algumasvezes12">Algumas vezes<br/>
+					<input type="radio" name = "superficiais"  onclick = "atualizarPontos('frequentemente12', '12')"  id = "frequentemente12">Frequentemente<br/>
+					<input type = "number" id = "superficiais"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu me sinto carente de companhia.	<br/>
+					<input type="radio" name = "carente"   onclick = "atualizarPontos('nunca13', '13')"  id = "nunca13" required>Nunca<br/>
+					<input type="radio" name = "carente"  onclick = "atualizarPontos('raramente13', '13')"  id = "raramente13">Realmente<br/>
+					<input type="radio" name = "carente"  onclick = "atualizarPontos('algumasvezes13', '13')"  id = "algumasvezes13">Algumas vezes<br/>
+					<input type="radio" name = "carente"  onclick = "atualizarPontos('frequentemente13', '13')"  id = "frequentemente13">Frequentemente<br/>
+					<input type = "number" id = "carente"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu sinto que ninguém me conhece realmente bem.<br/>	
+					<input type="radio" name = "conhece"   onclick = "atualizarPontos('nunca14', '14')"  id = "nunca14" required>Nunca<br/>
+					<input type="radio" name = "conhece"  onclick = "atualizarPontos('raramente14', '14')"  id = "raramente14">Realmente<br/>
+					<input type="radio" name = "conhece"  onclick = "atualizarPontos('algumasvezes14', '14')"  id = "algumasvezes14">Algumas vezes<br/>
+					<input type="radio" name = "conhece"  onclick = "atualizarPontos('frequentemente14', '14')"  id = "frequentemente14">Frequentemente<br/>
+					<input type = "number" id = "conhece"  hidden>
+				</div><br/>		
+				
+				<div>
+					Eu me sinto isolado(a) das outras pessoas.	<br/>
+					<input type="radio" name = "isolado"   onclick = "atualizarPontos('nunca15', '15')"  id = "nunca15" required>Nunca<br/>
+					<input type="radio" name = "isolado"  onclick = "atualizarPontos('raramente15', '15')"  id = "raramente15">Realmente<br/>
+					<input type="radio" name = "isolado"  onclick = "atualizarPontos('algumasvezes15', '15')"  id = "algumasvezes15">Algumas vezes<br/>
+					<input type="radio" name = "isolado"  onclick = "atualizarPontos('frequentemente15', '15')"  id = "frequentemente15">Frequentemente<br/>
+					<input type = "number" id = "isolado"  hidden>
+				</div><br/>	
+				
+				<div>
+					Sou infeliz estando tão excluído(a).<br/>
+					<input type="radio" name = "infelizExcluindo"   onclick = "atualizarPontos('nunca16', '16')"  id = "nunca16" required>Nunca<br/>
+					<input type="radio" name = "infelizExcluindo"  onclick = "atualizarPontos('raramente16', '16')"  id = "raramente16">Realmente<br/>
+					<input type="radio" name = "infelizExcluindo"  onclick = "atualizarPontos('algumasvezes16', '16')"  id = "algumasvezes16">Algumas vezes<br/>
+					<input type="radio" name = "infelizExcluindo"  onclick = "atualizarPontos('frequentemente16', '16')"  id = "frequentemente16">Frequentemente<br/>
+					<input type = "number" id = "infelizExcluindo"  hidden>
+				</div><br/>	
+				
+				<div>
+					Para mim é difícil fazer amigos.<br/>	
+					<input type="radio" name = "amigos"   onclick = "atualizarPontos('nunca17', '17')"  id = "nunca17" required>Nunca<br/>
+					<input type="radio" name = "amigos"  onclick = "atualizarPontos('raramente17', '17')"  id = "raramente17">Realmente<br/>
+					<input type="radio" name = "amigos"  onclick = "atualizarPontos('algumasvezes17', '17')"  id = "algumasvezes17">Algumas vezes<br/>
+					<input type="radio" name = "amigos"  onclick = "atualizarPontos('frequentemente17', '17')"  id = "frequentemente17">Frequentemente<br/>
+					<input type = "number" id = "amigos"  hidden>
+				</div><br/>
+				
+				<div>
+					Eu me sinto bloqueado(a) e excluído(a) por outras pessoas.<br/>	
+					<input type="radio" name = "bloqueado"   onclick = "atualizarPontos('nunca18', '18')"  id = "nunca18" required>Nunca<br/>
+					<input type="radio" name = "bloqueado"  onclick = "atualizarPontos('raramente18', '18')"  id = "raramente18">Realmente<br/>
+					<input type="radio" name = "bloqueado"  onclick = "atualizarPontos('algumasvezes18', '18')"  id = "algumasvezes18">Algumas vezes<br/>
+					<input type="radio" name = "bloqueado"  onclick = "atualizarPontos('frequentemente18', '18')"  id = "frequentemente18">Frequentemente<br/>
+					<input type = "number" id = "bloqueado"  hidden>
+				</div><br/>	
+				
+				<div>
+					Sinto que as pessoas estão ao meu redor, mas não estão comigo.<br/>
+					<input type="radio" name = "redor"   onclick = "atualizarPontos('nunca19', '19')"  id = "nunca19" required>Nunca<br/>
+					<input type="radio" name = "redor"  onclick = "atualizarPontos('raramente19', '19')"  id = "raramente19">Realmente<br/>
+					<input type="radio" name = "redor"  onclick = "atualizarPontos('algumasvezes19', '19')"  id = "algumasvezes19">Algumas vezes<br/>
+					<input type="radio" name = "redor"  onclick = "atualizarPontos('frequentemente19', '19')"  id = "frequentemente19">Frequentemente<br/>
+					<input type = "number" id = "redor"  hidden>
+				</div><br/>	
+				
+				<div>
+					Eu me sinto incomodado(a) em realizar atividades sozinho(a).<br/>
+					<input type="radio" name = "atividades"   onclick = "atualizarPontos('nunca20', '20')"  id = "nunca20" required>Nunca<br/>
+					<input type="radio" name = "atividades"  onclick = "atualizarPontos('raramente20', '20')"  id = "raramente20">Realmente<br/>
+					<input type="radio" name = "atividades"  onclick = "atualizarPontos('algumasvezes20', '20')"  id = "algumasvezes20">Algumas vezes<br/>
+					<input type="radio" name = "atividades"  onclick = "atualizarPontos('frequentemente20', '20')"  id = "frequentemente20">Frequentemente<br/>
+					<input type = "number" id = "atividades"  hidden>
+				</div><br/>		
+						
+			</div>
+			<br/>Triagem para Depressão (Escala de Depressão Geriátrica de Yesavage em versão reduzida)
+			<br/>Total de pontos: <input type="number" id = "pontos" name="pontos" value="0" readonly min = "0" max = "60">/60
+			<br/>Classificação: XX				<br/><br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/><br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

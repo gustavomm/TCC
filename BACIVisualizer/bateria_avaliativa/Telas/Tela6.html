@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela 6</title>   
+	<script type='text/javascript' src="../js/Tela6.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  </head>
+
+  <body onload = "carregar_dados();">
+		<fieldset>	
+			<legend>Paciente: 
+					<a id="nome"> </a>
+					</legend>
+			<form onsubmit="proximo(this);">
+					Leia e obedeça ao solicitado:<br>
+					<h1>FECHE OS OLHOS</h1>
+					<br>
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset> 
+  </body>
+</html>

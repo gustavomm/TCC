@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela 7</title> 
+	<script type='text/javascript' src="../js/Tela7.js"></script>	
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  </head>
+
+  <body onload = "carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>Paciente: 
+					<a id="nome"> </a>
+					</legend>
+			<form onsubmit="proximo(this);">
+				<div>
+					<br>Total de pontos de compreensão verbal:
+					<select name="compreensao" id="compreensao" required>
+						 <option id="compreensao1" value="compreensao1">0</option>
+						 <option id="compreensao2" value="compreensao2">1</option>
+					</select>
+				</div><br>
+				<div>
+					Faça o avaliando escrever uma frase de sua própria autoria. A frase deve conter um sujeito e um objeto e fazer sentido. 
+					(Estabeleça 1 ponto se houver acerto; Ignore erros de ortografia ao marcar o ponto)
+					<br><br>Total de pontos escrita voluntária:
+					<select name="frase" id="frase" required>
+						 <option id="frase1" value="frase1">0</option>
+						 <option id="frase2" value="frase2">1</option>
+					</select>
+				</div>
+				<br><br>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				 <br><br>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button">
+			</form>
+		</fieldset> 
+  </body>
+</html>

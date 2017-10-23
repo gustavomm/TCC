@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 173</title>
+	<script type='text/javascript' src="../js/Tela173.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body onload="carregar_dados();">
+        <fieldset>
+            <legend>
+                Paciente:
+                <a id="nome"> </a>
+            </legend>
+			<div>
+            <form onsubmit="proximo(this);">
+                <img src="../images/Tela173.png" alt="Leaf" style="width:304px;height:228px;">
+                <br />
+                <button type="button" onclick="showDiv()" class="button">Avaliar</button>
+                <div id="avaliacao" style="display:none">
+                    <p>Pontuação</p>
+                    <div>
+                        <input type="radio" name="pontuacao" id="1" required> certo – 1 ponto  <br />
+                        <input type="radio" name="pontuacao" id="0"> errado  - 0 pontos <br />
+                    </div>
+                    <br />
+                    <div>
+                        <input type="radio" name="comeco" id="contorno" required> começou pelo contorno <br />
+                        <input type="radio" name="comeco" id="nervuras"> começou pelas nervuras <br />
+                        <input type="radio" name="comeco" id="outro"> começou por outro ponto<br />
+                    </div>
+                    <br />
+                    <div>
+                        <input type="radio" name="faltar" id="falta"> faltam partes <br />
+                    </div>
+                    <br />
+                    <div>
+                        <input type="radio" name="sobrar" id="sobra"> há elementos que não estavam na imagem <br />
+                    </div>
+                    <br><br>
+                    <button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+                    <br><br>
+                    <button type="button" onclick="voltar()" class="button">Voltar</button>
+                    <button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+                    <input type="submit" value="Submit/Próximo" class="button"/>
+                </div>
+            </form>
+			</div>
+        </fieldset>
+</body>
+</html>

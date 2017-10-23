@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 71</title>
+		<script type='text/javascript' src="../js/Tela71.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Habilidade verbal – repetição de palavras</h3>
+			Leia as palavras abaixo e peça ao testando que repita as palavras após você:
+			<form onsubmit="proximo(this);">
+				<br/>
+				<br/>
+				GOL
+				<br/>
+				Certo:<input type="radio" class="correto" name="p1" id="p1correto"/>
+				Errado:<input type="radio" name="p1" id="p1errado"/>
+				<br/>
+				<br/>
+				IRMÃO
+				<br/>
+				Certo:<input type="radio" class="correto" name="p2" id="p2correto"/>
+				Errado:<input type="radio" name="p2" id="p2errado"/>
+				<br/>
+				<br/>
+				VARAL
+				<br/>
+				Certo:<input type="radio" class="correto" name="p3" id="p3correto"/>
+				Errado:<input type="radio" name="p3" id="p3errado"/>
+				<br/>
+				<br/>
+				DELE
+				<br/>
+				Certo:<input type="radio" class="correto" name="p4" id="p4correto"/>
+				Errado:<input type="radio" name="p4" id="p4errado"/>
+				<br/>
+				<br/>
+				CELULAR
+				<br/>
+				Certo:<input type="radio" class="correto" name="p5" id="p5correto"/>
+				Errado:<input type="radio" name="p5" id="p5errado"/>
+				<br/>
+				<br/>
+				BANCO
+				<br/>
+				Certo:<input type="radio" class="correto" name="p6" id="p6correto"/>
+				Errado:<input type="radio" name="p6" id="p6errado"/>
+				<br/>
+				<br/>
+				BARALHO
+				<br/>
+				Certo:<input type="radio" class="correto" name="p7" id="p7correto"/>
+				Errado:<input type="radio" name="p7" id="p7errado"/>
+				<br/>
+				<br/>
+				QUEIJO
+				<br/>
+				Certo:<input type="radio" class="correto" name="p8" id="p8correto"/>
+				Errado:<input type="radio" name="p8" id="p8errado"/>
+				<br/>
+				<br/>
+				BAUSTRE
+				<br/>
+				Certo:<input type="radio" class="correto" name="p9" id="p9correto"/>
+				Errado:<input type="radio" name="p9" id="p9errado"/>
+				<br/>
+				<br/>
+				GALFO
+				<br/>
+				Certo:<input type="radio" class="correto" name="p10" id="p10correto"/>
+				Errado:<input type="radio" name="p10" id="p10errado"/>
+				<br/>
+				<br/>
+				<input type="hidden" name="pontuacao" id="pontuacao" value="0"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

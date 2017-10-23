@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <script type='text/javascript' src="js/jquery-3.2.1.min.js"></script>
+  <script type='text/javascript' src="js/jsencrypt.min.js"></script>
+  <script type='text/javascript' src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/paciente.css"/>
+	<style>
+		h3 { 
+			color:#DCEDC8;
+		}
+	</style>
+</head>
+<body class="background-image">
+	<div class="background-image"></div>
+  <div id = "login"  class="center">
+		<div>
+			<h3><br/>CPF:<h3>
+			<input type="text" placeholder="CPF" id="cpf"> </input>
+			<h3><br/>CPF Cifrado:<h3>
+			<input type="password" placeholder="CPF cifrado" id="cpf_cifrado"> </input>	
+			<button onclick="validaLogin()" id="valida">Login</button>
+		</div>
+  </div>
+	<div class="logo">
+		<img src="Images/ufu.png" style="width:100px;height:100px;">
+		<img src="Images/uftm.png"  style="width:100px;height:100px;">
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Paciente</title>
+    <script type='text/javascript' src="../js/paciente.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/paciente.css"/>
+	<style>
+		h3 { 
+			color:#DCEDC8;
+		}
+	</style>
+</head>
+<body onload="carregar_dados()" class="background-image">
+	<div class="background-image"></div>
+    <div id = "paciente"  class="center">
+		<div>
+			<h3 id="psicologo"><br/>Psicólogo:<h3>
+			<input type="text" placeholder="Nome" id="nome"> </input>		
+			<button onclick="cadastrarPsicologo()" id="cadastrar">Cadastrar Psicólogo</button>
+			
+			<h2 id = "psicologoNome"></h2>	
+			<select id="selectPaciente"></select>			
+            <button onclick="selecionar()" id="selectbutton">Selecionar Usuário</button>
+			<br/><br/>
+            <input type="text" placeholder="Nome" id="nomeInsert"> </input>
+            <button onclick="criar_paciente()" id="createButton">Criar Usuário</button>
+			<br/><br/><br/><br/>
+            <button onclick="remover()" id="remover">Remover</button>
+			<br/>
+		</div>
+    </div>
+	<div class="logo">
+		<img src="../images/ufu.png" style="width:100px;height:100px;">
+		<img src="../images/uftm.png"  style="width:100px;height:100px;">
+	</div>
+</body>
+</html>

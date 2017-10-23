@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela 3</title>  
+	<script type='text/javascript' src="../js/tela3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  </head>
+
+  <body onload="carregar_dados()">
+    <form name = "tela3" onsubmit="proximo(this);">
+		<h3 class="center">BACI</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+                <a id="nome"> </a>
+			</legend>
+			<div>	
+					Qual o motivo da avaliação?<br/>
+				  <input type="radio" name="motivo" value="motivoMedico" id="motivoMedico" required> Encaminhamento / solicitação do médico<br/>
+				  <input type="radio" name="motivo" value="motivoCognitivo" id="motivoCognitivo"> Queixa espontânea/familiar de sintomas cognitivos<br/>
+				  <input type="radio" name="motivo" value="motivoEmocional" id="motivoEmocional"> Queixa espontânea/familiar de sintomas emocionais<br/>
+				  <input type="radio" name="motivo" value="motivoComportamento" id="motivoComportamento"> Queixa espontânea/familiar por mudança súbita de comportamento<br/>
+			</div><br>
+			<div>Descrição dos sintomas:<br/><textarea id="descricaoSintomas" cols = "100"></textarea></div>	<br>
+			<div>	
+					O início dos sintomas foi: <br/>
+				  <input type="radio" name="inicio" value="gradual" id="gradual" required> Gradual, insidioso <br/>
+				  <input type="radio" name="inicio" value="abrupto" id="abrupto"> Abrupto, com episódio inicial distinguível<br/>
+				
+			</div><br>
+			<div>Há quanto tempo percebeu os sintomas?<br/><textarea id="perceberSintomas" cols = "100"></textarea></div>	<br>
+			<div>	
+					Os sintomas: <br/>
+				  <input type="radio" name="sintomas" value="sintomasPresentes" id="sintomasPresentes" required> estão sempre presentes<br/>
+				  <input type="radio" name="sintomas" value="sintomasAparecem" id="sintomasAparecem"> aparecem e desaparecem<br/>
+				
+			</div><br>
+			<div id = "sintomasSituacao">	
+					Ao longo do tempo os sintomas têm:<br/>
+				  <input type="radio" name="variedadeSintoma" value="variedadeIntensidade" id="variedadeIntensidade" required> a mesma intensidade<br/>
+				  <input type="radio" name="variedadeSintoma" value="variedadeFlutuante" id="variedadeFlutuante"> são flutuantes (tem melhoras e pioras)<br/>
+			</div><br>
+			<div>	
+					Atualmente usa algum medicamento?<br/>
+				  <input type="radio" name="medicamento" value="medicamentoSim" id="medicamentoSim" onclick = "show('usoContinuo');" required> sim<br/>
+				  <input type="radio" name="medicamento" value="medicamentoNao" id="medicamentoNao" onclick = "hide('uso')"> não<br/>
+			</div><br>
+			<div id = "uso" hidden>
+				<div hidden id = "usoContinuo">	
+						é de uso contínuo? <br/>
+					  <input type="radio" name="usoContinuo" value="continuoSim" id="continuoSim" onclick = "show('usoMedicamentos')"> sim<br/>
+					  <input type="radio" name="usoContinuo" value="continuoNao" id="continuoNao" onclick = "hide('usoMedicamentos')"> não<br/>
+				</div><br>
+				<div id = "usoMedicamentos" hidden>
+					Faz uso de quais medicamentos?<br/>
+					<textarea id="quaisMedicamentos" cols = "100"></textarea>
+				</div><br>
+			</div><br>
+			<div>
+				Puxar no banco de dados os nomes dos medicamentos:
+				<ul>
+				  <li>Controle de hipertensão
+					<ul>
+						<li>Captopril</li>
+					</ul>
+				  </li>
+				  <li>Antidepressivo
+					<ul>
+					  <li>Rivotril</li>
+					  <li>Trileptal</li>
+					  <li>fluoxetina</li>
+					</ul>
+				  </li>
+				</ul>
+			</div>
+			<br><br>
+                <button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+             <br><br>			
+			<button type="button" onclick="voltar()" class="button">Voltar</button>
+			<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+			<input type="submit" value="Submit/Próximo" class="button">
+		</fieldset>
+	</form>   
+  </body>
+</html>

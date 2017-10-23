@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 16</title>
+		<script type='text/javascript' src="../js/Tela16.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Praxia Construtiva</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<div>
+				<form onsubmit="proximo(this);">
+					<p>Entregue uma folha e lápis ao testando</p>
+					<p>Diga:</p>
+					<p>
+						<b>
+                            Agora vamos fazer alguns desenhos. Não se preocupe se não sabe desenhar, não é isso que será avaliado.
+						</b>
+					</p>
+					<br />
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button"/>
+				</form>
+			</div>
+		</fieldset>
+	</body>
+</html>

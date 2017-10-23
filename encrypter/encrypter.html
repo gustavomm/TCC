@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Encrypter</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jsencrypt.min.js"></script>
+    <script type="text/javascript" src="js/encrypter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <div>
+      <label for="input">CPF:</label><br/>
+      <input id="cpf" name="cpf" type="text" placeholder="CPF"></input><br/>
+      <br/>
+      <input id="btnEncrypt" onclick="geraCifra()" type="button" value="Gerar Cifra"/><br/><br/>
+      <textarea id="cifrado" rows="15" cols="65" readonly></textarea>
+    </div>
+  </body>
+</html>

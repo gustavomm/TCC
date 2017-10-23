@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Tela 25</title>
+	   <script type='text/javascript' src="../js/Tela25.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	   <style>
+			.right {
+				padding-left: 20dp;
+				background-color: #455A64;
+				border: 2px solid;
+				border-radius: 25px;
+			}
+			.corner{
+				float: right;
+			}
+			.corner_pontos{
+				float: right;
+			}
+			.left{
+				padding-left: 20dp;
+			}
+			input[type="radio"]{
+			  margin: 0 10px 0 10px;
+			  border: 0px;
+			  height: 1.5em;
+
+			}
+		</style>
+   </head>
+	<body onload = "carregar_dados();">
+		<fieldset>
+		<legend>Paciente: 
+			<a id="nome"> </a>
+			</legend>
+			<b>Escala de Depressão Geriátrica de Yesavage em versão reduzida (GDS-15)</b><br></br>
+			Referência: Almeida OP, Almeida SA. Confiabilidade da versão brasileira da Escala de Depressão em Geriatria (GDS) versão reduzida. Arq Neuro-Psiquiatr. 1999;57:421-6<BR></BR>
+			<form onsubmit="proximo(this);">
+				<fieldset>
+						<font size = "4">		
+							<div class="corner">0&nbsp;&nbsp;&nbsp;&nbsp;0,5&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1,5&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;</div>   </br> 
+							</br></br>
+							<div  class="right">
+								&nbsp;&nbsp;1. Quadrado grande, organizador da figura  
+								<input type="radio" name="grande" id="grande1" class = "corner" required/>
+								<input type="radio" name="grande" id="grande2" class = "corner"/>
+								<input type="radio" name="grande" id="grande3" class = "corner"/>
+								<input type="radio" name="grande" id="grande4" class = "corner"/>
+								<input type="radio" name="grande" id="grande5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+								&nbsp;&nbsp;2.Quadrado menor 
+								<input type="radio" name="menor" id="menor1" class = "corner" required/>
+								<input type="radio" name="menor" id="menor2" class = "corner"/>
+								<input type="radio" name="menor" id="menor3" class = "corner"/>
+								<input type="radio" name="menor" id="menor4" class = "corner"/>
+								<input type="radio" name="menor" id="menor5" class = "corner"/>
+							</div>
+							</br></br> 
+							<div  class="right">
+								&nbsp;&nbsp;3. Linha horizontal divisora do quadrado grande
+								<input type="radio" name="linha" id="linha1" class = "corner" required/>
+								<input type="radio" name="linha" id="linha2" class = "corner"/>
+								<input type="radio" name="linha" id="linha3" class = "corner"/>
+								<input type="radio" name="linha" id="linha4" class = "corner"/>
+								<input type="radio" name="linha" id="linha5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;4. Retângulo na metade do quadrado grande 
+								<input type="radio" name="retangulo" id="retangulo1" class = "corner" required/>
+								<input type="radio" name="retangulo" id="retangulo2" class = "corner"/>
+								<input type="radio" name="retangulo" id="retangulo3" class = "corner"/>
+								<input type="radio" name="retangulo" id="retangulo4" class = "corner"/>
+								<input type="radio" name="retangulo" id="retangulo5" class = "corner"/>
+							</div>
+							<br/><br/>         
+							<div  class="right">
+								&nbsp;&nbsp;5. Quatro linhas dentro do retângulo 
+								<input type="radio" name="quatro" id="quatro1" class = "corner" required/>
+								<input type="radio" name="quatro" id="quatro2" class = "corner"/>
+								<input type="radio" name="quatro" id="quatro3" class = "corner"/>
+								<input type="radio" name="quatro" id="quatro4" class = "corner"/>
+								<input type="radio" name="quatro" id="quatro5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+								&nbsp;&nbsp;6.Seta a esquerda 
+								<input type="radio" name="seta" id="seta1" class = "corner" required/>
+								<input type="radio" name="seta" id="seta2" class = "corner"/>
+								<input type="radio" name="seta" id="seta3" class = "corner"/>
+								<input type="radio" name="seta" id="seta4" class = "corner"/>
+								<input type="radio" name="seta" id="seta5" class = "corner"/>
+							</div>
+							</br></br> 
+							<div  class="right">
+								&nbsp;&nbsp;7. Linha vertical na metade superior do quadrado, à direita
+								<input type="radio" name="vertical" id="vertical1" class = "corner" required/>
+								<input type="radio" name="vertical" id="vertical2" class = "corner"/>
+								<input type="radio" name="vertical" id="vertical3" class = "corner"/>
+								<input type="radio" name="vertical" id="vertical4" class = "corner"/>
+								<input type="radio" name="vertical" id="vertical5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;8. Linha vertical a esquerda, cortando as duas metades do quadrado
+								<input type="radio" name="cortando" id="cortando1" class = "corner" required/>
+								<input type="radio" name="cortando" id="cortando2" class = "corner"/>
+								<input type="radio" name="cortando" id="cortando3" class = "corner"/>
+								<input type="radio" name="cortando" id="cortando4" class = "corner"/>
+								<input type="radio" name="cortando" id="cortando5" class = "corner"/>
+							</div>
+							<br/><br/>         
+							<div  class="right">
+								&nbsp;&nbsp;9. Dois X sobre a linha vertical a esquerda, cortando as duas metades do quadrado  
+								<input type="radio" name="esquerda" id="esquerda1" class = "corner" required/>
+								<input type="radio" name="esquerda" id="esquerda2" class = "corner"/>
+								<input type="radio" name="esquerda" id="esquerda3" class = "corner"/>
+								<input type="radio" name="esquerda" id="esquerda4" class = "corner"/>
+								<input type="radio" name="esquerda" id="esquerda5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+								&nbsp;&nbsp;10. Retângulo externo à esquerda do quadrado grande
+								<input type="radio" name="externo" id="externo1" class = "corner" required/>
+								<input type="radio" name="externo" id="externo2" class = "corner"/>
+								<input type="radio" name="externo" id="externo3" class = "corner"/>
+								<input type="radio" name="externo" id="externo4" class = "corner"/>
+								<input type="radio" name="externo" id="externo5" class = "corner"/>
+							</div>
+							</br></br> 
+							<div  class="right">
+								&nbsp;&nbsp;11. Linha divisória separando as duas metades do retângulo externo ao quadrado grande
+								<input type="radio" name="metade" id="metade1" class = "corner" required/>
+								<input type="radio" name="metade" id="metade2" class = "corner"/>
+								<input type="radio" name="metade" id="metade3" class = "corner"/>
+								<input type="radio" name="metade" id="metade4" class = "corner"/>
+								<input type="radio" name="metade" id="metade5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;12. Z sobre a linha divisória separando as duas metades do retângulo externo ao quadrado grande
+								<input type="radio" name="z" id="z1" class = "corner" required/>
+								<input type="radio" name="z" id="z2" class = "corner"/>
+								<input type="radio" name="z" id="z3" class = "corner"/>
+								<input type="radio" name="z" id="z4" class = "corner"/>
+								<input type="radio" name="z" id="z5" class = "corner"/>
+							</div>
+							<br/><br/>         
+							<div  class="right">
+								&nbsp;&nbsp;13. Círculo com um ponto dentro do retângulo externo, à esquerda  
+								<input type="radio" name="circulo" id="circulo1" class = "corner" required/>
+								<input type="radio" name="circulo" id="circulo2" class = "corner"/>
+								<input type="radio" name="circulo" id="circulo3" class = "corner"/>
+								<input type="radio" name="circulo" id="circulo4" class = "corner"/>
+								<input type="radio" name="circulo" id="circulo5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+								&nbsp;&nbsp;14. Círculo com dois pontos dentro do retângulo externo, à direita
+								<input type="radio" name="dentro" id="dentro1" class = "corner" required/>
+								<input type="radio" name="dentro" id="dentro2" class = "corner"/>
+								<input type="radio" name="dentro" id="dentro3" class = "corner"/>
+								<input type="radio" name="dentro" id="dentro4" class = "corner"/>
+								<input type="radio" name="dentro" id="dentro5" class = "corner"/>
+							</div>
+							</br></br> 
+							<div  class="right">
+								&nbsp;&nbsp;15. Z inclinado na parte inferior do quadrado, à esquerda
+								<input type="radio" name="inferior" id="inferior1" class = "corner" required/>
+								<input type="radio" name="inferior" id="inferior2" class = "corner"/>
+								<input type="radio" name="inferior" id="inferior3" class = "corner"/>
+								<input type="radio" name="inferior" id="inferior4" class = "corner"/>
+								<input type="radio" name="inferior" id="inferior5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;16. Linha horizontal na parte inferior do quadrado grande, que começa na parte inferior e segue para a parte externa
+								<input type="radio" name="quadrado" id="quadrado1" class = "corner" required/>
+								<input type="radio" name="quadrado" id="quadrado2" class = "corner"/>
+								<input type="radio" name="quadrado" id="quadrado3" class = "corner"/>
+								<input type="radio" name="quadrado" id="quadrado4" class = "corner"/>
+								<input type="radio" name="quadrado" id="quadrado5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;17. Linha vertical na parte inferior do quadrado grande, que se inicia no meio e segue até a linha horizontal
+								<input type="radio" name="inicio" id="inicio1" class = "corner" required/>
+								<input type="radio" name="inicio" id="inicio2" class = "corner"/>
+								<input type="radio" name="inicio" id="inicio3" class = "corner"/>
+								<input type="radio" name="inicio" id="inicio4" class = "corner"/>
+								<input type="radio" name="inicio" id="inicio5" class = "corner"/>
+							</div>
+							</br></br>
+							<div  class="right">
+							&nbsp;&nbsp;18. Seta na parte inferior do quadrado,  que se inicia no meio e segue até a parte externa da figura
+								<input type="radio" name="meio" id="meio1" class = "corner" required/>
+								<input type="radio" name="meio" id="meio2" class = "corner"/>
+								<input type="radio" name="meio" id="meio3" class = "corner"/>
+								<input type="radio" name="meio" id="meio4" class = "corner"/>
+								<input type="radio" name="meio" id="meio5" class = "corner"/>
+							</div>
+							
+									
+						</font>
+					
+				</fieldset>
+				<br>Triagem para Depressão (Escala de Depressão Geriátrica de Yesavage em versão reduzname="ex" ida)
+				<br>Total de pontos: <input type="number"  id="pontos" value="0" readonly min = "0" max = "15">/15
+				<br>Classificação: 
+				<br><br>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				 <br><br>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button">
+			</form>	
+		</fieldset>
+	</body>
+</html>

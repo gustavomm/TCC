@@ -1,0 +1,436 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pacientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Paciente" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Nome"/>
+              <xs:element type="xs:byte" name="TelaAtual"/>
+              <xs:element type="xs:byte" name="Flag"/>
+              <xs:element name="Tela2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:date" name="dataAplicacao"/>
+                    <xs:element type="xs:string" name="nomeAvaliado"/>
+                    <xs:element type="xs:date" name="dataNascimento"/>
+                    <xs:element type="xs:string" name="lateralidade"/>
+                    <xs:element type="xs:string" name="escolaridade"/>
+                    <xs:element type="xs:string" name="trabalho"/>
+                    <xs:element type="xs:string" name="trabalhoAtual"/>
+                    <xs:element type="xs:string" name="naturalidade"/>
+                    <xs:element type="xs:string" name="sexo"/>
+                    <xs:element type="xs:string" name="limitacaoCorporal"/>
+                    <xs:element type="xs:string" name="problemaVisual"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="motivo"/>
+                    <xs:element type="xs:string" name="descricaoSintomas"/>
+                    <xs:element type="xs:string" name="sintomas"/>
+                    <xs:element type="xs:string" name="variedadeSintoma"/>
+                    <xs:element type="xs:string" name="medicamento"/>
+                    <xs:element type="xs:string" name="usoContinuo"/>
+                    <xs:element type="xs:string" name="quaisMedicamentos"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela4">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="banho"/>
+                    <xs:element type="xs:string" name="vestir"/>
+                    <xs:element type="xs:string" name="comer"/>
+                    <xs:element type="xs:string" name="tomarMedicacao"/>
+                    <xs:element type="xs:string" name="locomover"/>
+                    <xs:element type="xs:string" name="sairCasa"/>
+                    <xs:element type="xs:string" name="prepararRefeicao"/>
+                    <xs:element type="xs:string" name="compras"/>
+                    <xs:element type="xs:string" name="financeiros"/>
+                    <xs:element type="xs:string" name="obrigacoesDiariaCasa"/>
+                    <xs:element type="xs:string" name="obrigacoesDiariaFora"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela5">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="diaSemana"/>
+                    <xs:element type="xs:string" name="diaMes"/>
+                    <xs:element type="xs:string" name="ano"/>
+                    <xs:element type="xs:string" name="horas"/>
+                    <xs:element type="xs:string" name="ondeEstamos"/>
+                    <xs:element type="xs:string" name="local"/>
+                    <xs:element type="xs:string" name="instituicao"/>
+                    <xs:element type="xs:string" name="bairro"/>
+                    <xs:element type="xs:string" name="cidade"/>
+                    <xs:element type="xs:string" name="estado"/>
+                    <xs:element type="xs:string" name="totalAcerto"/>
+                    <xs:element type="xs:string" name="calc1"/>
+                    <xs:element type="xs:string" name="calc2"/>
+                    <xs:element type="xs:string" name="calc3"/>
+                    <xs:element type="xs:string" name="calc4"/>
+                    <xs:element type="xs:string" name="calc5"/>
+                    <xs:element type="xs:string" name="memoria"/>
+                    <xs:element type="xs:string" name="lapis"/>
+                    <xs:element type="xs:string" name="relogio"/>
+                    <xs:element type="xs:string" name="frase"/>
+                    <xs:element type="xs:string" name="papel"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela7">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="compreensao"/>
+                    <xs:element type="xs:string" name="frase"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela9">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="ex1"/>
+                    <xs:element type="xs:string" name="ex2"/>
+                    <xs:element type="xs:string" name="ex3"/>
+                    <xs:element type="xs:string" name="ex4"/>
+                    <xs:element type="xs:string" name="ex5"/>
+                    <xs:element type="xs:string" name="ex6"/>
+                    <xs:element type="xs:string" name="ex7"/>
+                    <xs:element type="xs:string" name="ex8"/>
+                    <xs:element type="xs:string" name="ex9"/>
+                    <xs:element type="xs:string" name="ex10"/>
+                    <xs:element type="xs:string" name="ex11"/>
+                    <xs:element type="xs:string" name="ex12"/>
+                    <xs:element type="xs:string" name="ex13"/>
+                    <xs:element type="xs:string" name="ex14"/>
+                    <xs:element type="xs:string" name="ex15"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela10">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="infeliz"/>
+                    <xs:element type="xs:string" name="tolerar"/>
+                    <xs:element type="xs:string" name="companhia"/>
+                    <xs:element type="xs:string" name="compreende"/>
+                    <xs:element type="xs:string" name="esperando"/>
+                    <xs:element type="xs:string" name="recorrer"/>
+                    <xs:element type="xs:string" name="rodeiam"/>
+                    <xs:element type="xs:string" name="excluido"/>
+                    <xs:element type="xs:string" name="sozinho"/>
+                    <xs:element type="xs:string" name="comunicar"/>
+                    <xs:element type="xs:string" name="superficiais"/>
+                    <xs:element type="xs:string" name="carente"/>
+                    <xs:element type="xs:string" name="conhece"/>
+                    <xs:element type="xs:string" name="isolado"/>
+                    <xs:element type="xs:string" name="amigos"/>
+                    <xs:element type="xs:string" name="bloqueado"/>
+                    <xs:element type="xs:string" name="redor"/>
+                    <xs:element type="xs:string" name="atividades"/>
+                    <xs:element type="xs:string" name="excluído"/>
+                    <xs:element type="xs:string" name="proximoNiguem"/>
+                    <xs:element type="xs:string" name="proximoNinguem"/>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela11">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="frequencia"/>
+                    <xs:element type="xs:string" name="reconhecer"/>
+                    <xs:element type="xs:string" name="atividade"/>
+                    <xs:element type="xs:string" name="acabaram"/>
+                    <xs:element type="xs:string" name="anotar"/>
+                    <xs:element type="xs:string" name="compromissos"/>
+                    <xs:element type="xs:string" name="nomepessoas"/>
+                    <xs:element type="xs:string" name="rostopessoas"/>
+                    <xs:element type="xs:string" name="recentemente"/>
+                    <xs:element type="xs:string" name="dezanos"/>
+                    <xs:element type="xs:string" name="historia"/>
+                    <xs:element type="xs:string" name="objeto"/>
+                    <xs:element type="xs:string" name="recado"/>
+                    <xs:element type="xs:string" name="memoria"/>
+                    <xs:element type="xs:string" name="pontuacao" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela12">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela13">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela14">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela15">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela17">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                    <xs:element type="xs:string" name="comeco"/>
+                    <xs:element type="xs:string" name="faltar"/>
+                    <xs:element type="xs:string" name="sobrar"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela172">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                    <xs:element type="xs:string" name="comeco"/>
+                    <xs:element type="xs:string" name="faltar"/>
+                    <xs:element type="xs:string" name="sobrar"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela173">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                    <xs:element type="xs:string" name="comeco"/>
+                    <xs:element type="xs:string" name="faltar"/>
+                    <xs:element type="xs:string" name="sobrar"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela174">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                    <xs:element type="xs:string" name="comeco"/>
+                    <xs:element type="xs:string" name="faltar"/>
+                    <xs:element type="xs:string" name="sobrar"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela175">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="pontuacao"/>
+                    <xs:element type="xs:string" name="comeco"/>
+                    <xs:element type="xs:string" name="faltar"/>
+                    <xs:element type="xs:string" name="sobrar"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela18">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="item1"/>
+                    <xs:element type="xs:string" name="item2"/>
+                    <xs:element type="xs:string" name="item3"/>
+                    <xs:element type="xs:string" name="item4"/>
+                    <xs:element type="xs:string" name="item5"/>
+                    <xs:element type="xs:string" name="sensibilidade"/>
+                    <xs:element type="xs:string" name="controle"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela21">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="lembrar"/>
+                    <xs:element type="xs:string" name="organizar"/>
+                    <xs:element type="xs:string" name="ordenar"/>
+                    <xs:element type="xs:string" name="descrever"/>
+                    <xs:element type="xs:string" name="contar"/>
+                    <xs:element type="xs:string" name="intrusao"/>
+                    <xs:element type="xs:string" name="confabular"/>
+                    <xs:element type="xs:string" name="coerencia"/>
+                    <xs:element type="xs:string" name="pausa"/>
+                    <xs:element type="xs:string" name="repetir"/>
+                    <xs:element type="xs:string" name="observacoes"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela24">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="grande"/>
+                    <xs:element type="xs:string" name="menor"/>
+                    <xs:element type="xs:string" name="linha"/>
+                    <xs:element type="xs:string" name="retangulo"/>
+                    <xs:element type="xs:string" name="quatro"/>
+                    <xs:element type="xs:string" name="seta"/>
+                    <xs:element type="xs:string" name="vertical"/>
+                    <xs:element type="xs:string" name="cortando"/>
+                    <xs:element type="xs:string" name="esquerda"/>
+                    <xs:element type="xs:string" name="externo"/>
+                    <xs:element type="xs:string" name="metade"/>
+                    <xs:element type="xs:string" name="z"/>
+                    <xs:element type="xs:string" name="circulo"/>
+                    <xs:element type="xs:string" name="dentro"/>
+                    <xs:element type="xs:string" name="inferior"/>
+                    <xs:element type="xs:string" name="quadrado"/>
+                    <xs:element type="xs:string" name="inicio"/>
+                    <xs:element type="xs:string" name="meio"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela25" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="grande"/>
+                    <xs:element type="xs:string" name="menor"/>
+                    <xs:element type="xs:string" name="linha"/>
+                    <xs:element type="xs:string" name="retangulo"/>
+                    <xs:element type="xs:string" name="quatro"/>
+                    <xs:element type="xs:string" name="seta"/>
+                    <xs:element type="xs:string" name="vertical"/>
+                    <xs:element type="xs:string" name="cortando"/>
+                    <xs:element type="xs:string" name="esquerda"/>
+                    <xs:element type="xs:string" name="externo"/>
+                    <xs:element type="xs:string" name="metade"/>
+                    <xs:element type="xs:string" name="z"/>
+                    <xs:element type="xs:string" name="circulo"/>
+                    <xs:element type="xs:string" name="dentro"/>
+                    <xs:element type="xs:string" name="inferior"/>
+                    <xs:element type="xs:string" name="quadrado"/>
+                    <xs:element type="xs:string" name="inicio"/>
+                    <xs:element type="xs:string" name="meio"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela27" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela28" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela29" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela30" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela31" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela32" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela33" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela34" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela35" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela36" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela38" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela39" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela40" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela41" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela42" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Tela43" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="quadrado"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

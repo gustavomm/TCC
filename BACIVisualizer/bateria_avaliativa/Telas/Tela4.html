@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+			<title>Tela 4</title>  
+				<script type='text/javascript' src="../js/Tela4.js"></script>
+				<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		</head>
+
+		<body onload="carregar_dados();">
+			<h3 class="center">BACI</h3>
+			<h3>Porcentagem de itens respondidos</h3>
+			<fieldset>
+				<legend>Paciente:
+					<a id="nome"> </a>
+				</legend>
+				<form onsubmit="proximo(this);"> 
+						Você consegue realizar as seguintes atividades de vida diárias com independência?
+						<div>			
+							<div>
+								<br/>
+							a. Tomar banho<br/>
+								<input type="radio" name="banho" value="banhoNao" id="banhoNao" required/> não<br/>
+								<input type="radio" name="banho" value="banhoAjuda" id="banhoAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="banho" value="banhoSim" id="banhoSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							b. Vestir-se<br/>
+								<input type="radio" name="vestir" value="vestirNao" id="vestirNao" required/> não<br/>
+								<input type="radio" name="vestir" value="vestirAjuda" id="vestirAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="vestir" value="vestirSim" id="vestirSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							c. Comer<br/>
+								<input type="radio" name="comer" value="comerNao" id="comerNao" required/> não<br/>
+								<input type="radio" name="comer" value="comerAjuda" id="comerAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="comer" value="comerSim" id="comerSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							d. Tomar medicação<br/>
+								<input type="radio" name="tomarMedicacao" value="tomarMedicacaoNao" id="tomarMedicacaoNao" required/> não<br/>
+								<input type="radio" name="tomarMedicacao" value="tomarMedicacaoAjuda" id="tomarMedicacaoAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="tomarMedicacao" value="tomarMedicacaoSim" id="tomarMedicacaoSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							e. Locomover-se dentro de casa<br/>
+								<input type="radio" name="locomover" value="locomoverNao" id="locomoverNao" required/> não<br/>
+								<input type="radio" name="locomover" value="locomoverAjuda" id="locomoverAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="locomover" value="locomoverSim" id="locomoverSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							f. Ir a algum lugar fora de casa <br/>
+								<input type="radio" name="sairCasa" value="sairCasaNao" id="sairCasaNao" required/> não<br/>
+								<input type="radio" name="sairCasa" value="sairCasaAjuda" id="sairCasaAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="sairCasa" value="sairCasaSim" id="sairCasaSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							g. Preparar a própria refeição<br/>
+								<input type="radio" name="prepararRefeicao" value="prepararRefeicaoNao" id="prepararRefeicaoNao" required/> não<br/>
+								<input type="radio" name="prepararRefeicao" value="prepararRefeicaoAjuda" id="prepararRefeicaoAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="prepararRefeicao" value="prepararRefeicaoSim" id="prepararRefeicaoSim"/> sim<br/>
+							</div>
+							<br/>
+							<div>
+							h. Fazer compras<br/>
+								<input type="radio" name="compras" value="comprasNao" id="comprasNao" required/> não<br/>
+								<input type="radio" name="compras" value="comprasAjuda" id="comprasAjuda"/> sim, com ajuda<br/>
+								<input type="radio" name="compras" value="comprasSim" id="comprasSim"/> sim<br/>
+							</div>
+							<br/>
+
+							i. Resolver problemas financeiros<br/>
+							<input type="radio" name="financeiros" value="financeirosNao" id="financeirosNao" required/> não<br/>
+							<input type="radio" name="financeiros" value="financeirosAjuda" id="financeirosAjuda"/> sim, com ajuda<br/>
+							<input type="radio" name="financeiros" value="financeirosSim" id="financeirosSim"/> sim<br/>
+							<br/>
+						</div>
+					<br/>
+					<div>	
+							Você tem obrigações diárias na rotina familiar/nas tarefas de casa? <br/>
+						<input type="radio" name="obrigacoesDiariaCasa" value="obrigacoesDiariaCasaSim" id="obrigacoesDiariaCasaSim" onclick = "show('obrigacoesCasaDescricao');" required/> sim<br/>
+						<input type="radio" name="obrigacoesDiariaCasa" value="obrigacoesDiariaCasaNao" id="obrigacoesDiariaCasaNao" onclick = "hide('obrigacoesCasaDescricao');" /> não<br/>
+					</div>
+					</br>
+					<div id = "obrigacoesCasaDescricao" hidden>
+						Quais essas obrigações?<br/>
+						<textarea id="obrigacoesDiariaCasaText" cols = "100"></textarea>
+					</div>
+					<br/>
+					<div>	
+							Você tem obrigações diárias fora de casa?<br/>
+						<input type="radio" name="obrigacoesDiariaFora" value="obrigacoesDiariaForaSim" id="obrigacoesDiariaForaSim" onclick = "show('obrigacoesForaDescricao');" required/> sim<br/>
+						<input type="radio" name="obrigacoesDiariaFora" value="obrigacoesDiariaForaNao" id="obrigacoesDiariaForaNao" onclick = "hide('obrigacoesForaDescricao');"/> não<br/>
+					</div>
+					</br>
+					<div id = "obrigacoesForaDescricao" hidden>
+						Quais essas obrigações?<br/>
+						<textarea id="obrigacoesDiariaForaText" cols = "100"></textarea>
+					</div>
+					<br/>
+					<br/>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br/>
+					<br/>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button">
+					</form>
+				</fieldset>
+			</body>
+		</html>
+		

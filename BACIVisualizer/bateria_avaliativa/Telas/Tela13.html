@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 13</title>
+		<script type='text/javascript' src="../js/Tela13.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>Paciente: 
+				<a id="nome"> </a>
+			</legend>
+			<h4 class="center"> Verificação de controle motor dos membros superiores </h4>
+			<br/>
+			<form onsubmit="proximo(this);">
+				<div>
+					<p>Item 2: Mãos para baixo</p>
+					<p>Peça ao testando para que estique as mãos para frente com as palmas viradas para cima</p>
+					<p> ~foto ilustrativa~</p>
+					<p>Depois que o testando colocar as mãos em posição, peça que Apenas relaxe enquanto examina seus reflexos.</p>
+					<p>Empurre as mãos do testando para baixo, suavemente no início, depois com mais força. Determine a participação ativa do testando na resposta.</p>
+
+					<br/>
+					<br/>
+					<p>Pontuação</p>
+					<input type="radio" name="pontuacao" id="0" required/> 0 pontos – se o testando permanecer passivo <br />
+					<input type="radio" name="pontuacao" id="1"/> 1 ponto – se o comportamento do testando for duvidoso quanto a ajuda ativa <br />
+					<input type="radio" name="pontuacao" id="2"/> 2 pontos – se o testando copiar ativamente o movimento solicitado
+					<br/>
+					<br/>
+				</div>
+				<br/>
+				<br/>			
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>	
+			</form>
+		</fieldset>
+	</body>
+</html>

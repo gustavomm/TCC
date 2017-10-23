@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 103</title>
+		<script type='text/javascript' src="../js/Tela103.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();" onclick="revelaform()">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Habilidade verbal – Escrita ditada</h3>
+			Agora eu vou falar algumas palavras e preciso que você as copie.
+			<form id="form" onsubmit="proximo(this);">
+				<br/>
+				FORÇA
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Forca.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p1" id="p1correto"/>
+				Errado:<input type="radio"  name="p1" id="p1errado"/>
+				<br/>
+				<br/>
+				ASA
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Asa.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p2" id="p2correto"/>
+				Errado:<input type="radio"  name="p2" id="p2errado"/>
+				<br/>
+				<br/>
+				LOMBO
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Lombo.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p3" id="p3correto"/>
+				Errado:<input type="radio"  name="p3" id="p3errado"/>
+				<br/>
+				<br/>
+				SETA
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Seta.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p4" id="p4correto"/>
+				Errado:<input type="radio"  name="p4" id="p4errado"/>
+				<br/>
+				<br/>
+				CACHORRO
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Cachorro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p5" id="p5correto"/>
+				Errado:<input type="radio"  name="p5" id="p5errado"/>
+				<br/>
+				<br/>
+				CEU
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Ceu.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p6" id="p6correto"/>
+				Errado:<input type="radio"  name="p6" id="p6errado"/>
+				<br/>
+				<br/>
+				CAMPO
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Campo.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p7" id="p7correto"/>
+				Errado:<input type="radio"  name="p7" id="p7errado"/>
+				<br/>
+				<br/>
+				ANDAR
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Andar.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p8" id="p8correto"/>
+				Errado:<input type="radio"  name="p8" id="p8errado"/>
+				<br/>
+				<br/>
+				QUADRADO
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Quadrado.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p9" id="p9correto"/>
+				Errado:<input type="radio"  name="p9" id="p9errado"/>
+				<br/>
+				<br/>
+				SECULO
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Seculo.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p10" id="p10correto"/>
+				Errado:<input type="radio"  name="p10" id="p10errado"/>
+				<br/>
+				<br/>
+				DESTRACHE
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Destrache.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p11" id="p11correto"/>
+				Errado:<input type="radio"  name="p11" id="p11errado"/>
+				<br/>
+				<br/>
+				AUPORA
+				<br/>
+				<audio controls>
+				  <source src="../Audio/Aupora.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p12" id="p12correto"/>
+				Errado:<input type="radio"  name="p12" id="p12errado"/>
+				<input type="hidden" name="pontuacao" id="pontuacao" value="0"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

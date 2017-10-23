@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 15</title>
+		<script type='text/javascript' src="../js/Tela15.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Teste do Relógio – tarefa de Evocação</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>Paciente: 
+				<a id="nome"> </a>
+			</legend>
+			<div>
+				<form onsubmit="proximo(this);">
+					<p>Entregue uma folha e lápis ao testando</p>
+					<p>Diga:</p>
+					<p>
+						<b>Agora vamos fazer alguns desenhos. Não se preocupe se não sabe desenhar, não é isso que será avaliado.
+                    Por favor desenhe um relógio, com todos os números e os ponteiros, marcando 3:45</b>
+					</p>
+					<br />
+					<p>Pontuação</p>
+					<input type="radio" name="pontuacao" id="10" required/> 10 pontos – Tudo está correto <br />
+					<input type="radio" name="pontuacao" id="9"/> 9 pontos – Leve desordem nos ponteiros (ex.: ponteiro das horas sobre o 3) <br />
+					<input type="radio" name="pontuacao" id="8"/> 8 pontos – Desordem acentuada nos ponteiros, mas não passando do limite de 1 hora (ex: 3:20) <br />
+					<input type="radio" name="pontuacao" id="7"/> 7 pontos – Horário completamente errado <br />
+					<input type="radio" name="pontuacao" id="6"/> 6 pontos – Uso inapropriado de marcação das horas (ex horário em estilo de relógio digital, seja por não ter ponteiros e as horas estarem marcadas por círculos em volta dos números) <br />
+					<input type="radio" name="pontuacao" id="5"/> 5 pontos – Números em ordem inversa, ou concentrados em alguma parte do relógio <br />
+					<input type="radio" name="pontuacao" id="4"/> 4 pontos – Números faltando ou situados fora dos limites do relógio <br />
+					<input type="radio" name="pontuacao" id="3"/> 3 pontos – Números e relógio não conectados ou ausência de ponteiros <br />
+					<input type="radio" name="pontuacao" id="2"/> 2 pontos – Alguma evidência de ter entendido as instruções, mas pouca semelhança com o relógio <br />
+					<input type="radio" name="pontuacao" id="1"/> 1 ponto – Não tentou ou não conseguiu representar um relógio <br />
+					<br/>
+					<br/>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br/>
+					<br/>
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button"/>
+				</form>
+			</div>
+		</fieldset>
+	</body>
+</html>

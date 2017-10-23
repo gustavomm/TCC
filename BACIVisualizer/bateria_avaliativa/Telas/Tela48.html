@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Tela 48</title>
+			<script type='text/javascript' src="../js/Tela48.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		</head>
+
+		<body onload="carregar_dados();">
+			<h3>Nome do Instrumento</h3>
+			<h3>Porcentagem de itens respondidos</h3>
+			<fieldset>
+				<legend>
+                Paciente:
+					<a id="nome"> </a>
+				</legend>
+				<form onsubmit="proximo(this);">
+					<h3>Memória de Longo Prazo</h3>
+				</br>
+			</br>
+
+			<audio controls>
+				<source src="" type="audio/mp3"/>
+										Your browser does not support the audio element.
+			</audio>
+			<table style="width:30%">
+				<tr>
+					<td>
+						<b>Lista</b>
+					</td> 
+					<td>
+						<b>Acerto</b>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Carro</i></td> 
+					<td>
+						<input type="checkbox" name="carro" id="carro"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Estrela</td> 
+					<td>
+						<input type="checkbox" name="estrela" id="estrela"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Cavalo</td> 
+					<td>
+						<input type="checkbox" name="cavalo" id="cavalo"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Coração</i></td> 
+					<td>
+						<input type="checkbox" name="coracao" id="coracao"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Pato</td> 
+					<td>
+						<input type="checkbox" name="pato" id="pato"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Pêra</i></td> 
+					<td>
+						<input type="checkbox" name="pera" id="pera"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Árvore</td> 
+					<td>
+						<input type="checkbox" name="arvore" id="arvore"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Ônibus</i></td> 
+					<td>
+						<input type="checkbox" name="onibus" id="onibus"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Sapato</td> 
+					<td>
+						<input type="checkbox" name="sapato" id="sapato"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Copo</td> 
+					<td>
+						<input type="checkbox" name="copo" id="copo"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Rato</i></td> 
+					<td>
+						<input type="checkbox" name="rato" id="rato"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Janela</td> 
+					<td>
+						<input type="checkbox" name="janela" id="janela"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Sopa</i></td> 
+					<td>
+						<input type="checkbox" name="sopa" id="sopa"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Boneca</td> 
+					<td>
+						<input type="checkbox" name="boneca" id="boneca"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Caderno</i></td> 
+					<td>
+						<input type="checkbox" name="caderno" id="caderno"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Nuvem</i></td> 
+					<td>
+						<input type="checkbox" name="nuvem" id="nuvem"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Mesa</td> 
+					<td>
+						<input type="checkbox" name="mesa" id="mesa"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Caixa</i></td> 
+					<td>
+						<input type="checkbox" name="caixa" id="caixa"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Livro</td> 
+					<td>
+						<input type="checkbox" name="livro" id="livro"/>
+					</td>
+				</tr>
+				<tr>
+					<td><i>Vestido</i></td> 
+					<td>
+						<input type="checkbox" name="vestido" id="vestido"/>
+					</td>
+				</tr>
+				
+			</table>
+			<br/>
+			<br/>
+			<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br><br>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button">
+			</form>
+		</fieldset>
+	</body>
+</html>

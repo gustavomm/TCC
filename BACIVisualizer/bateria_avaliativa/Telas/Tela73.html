@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 73</title>
+		<script type='text/javascript' src="../js/Tela73.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Habilidade verbal – Provérbios e Metáforas</h3>
+			Peça ao testando que responda aos itens abaixo:
+			<form onsubmit="proximo(this);">
+				<br/>
+				<br/>
+				Item 1: A mentira tem perna a perna curta.
+				<br/>
+				Resposta correta: Rapidamente se descobre uma mentira.
+				<br/>
+				Certo:<input type="radio" class="correto" name="p1" id="p1correto"/>
+				Errado:<input type="radio" name="p1" id="p1errado"/>
+				<br/>
+				<br/>
+				Item 2: Não adianta chorar sobre o leite derramado.
+				<br/>
+				Resposta correta: Se já aconteceu, não tem nada que se possa fazer
+				<br/>
+				Certo:<input type="radio" class="correto" name="p2" id="p2correto"/>
+				Errado:<input type="radio" name="p2" id="p2errado"/>
+				<br/>
+				<br/>
+				Item 3: Em cavalo dado, não se olham os dentes.
+				<br/>
+				Resposta correta: Quando você ganha algo, não pode ser exigente.
+				<br/>
+				Certo:<input type="radio" class="correto" name="p3" id="p3correto"/>
+				Errado:<input type="radio" name="p3" id="p3errado"/>
+				<br/>
+				<br/>
+				Item 4: Nós jantamos como reis.
+				<br/>
+				Resposta correta: Nós comemos muito bem.
+				<br/>
+				Certo:<input type="radio" class="correto" name="p4" id="p4correto"/>
+				Errado:<input type="radio" name="p4" id="p4errado"/>
+				<br/>
+				<br/>
+				Item 5: Estou mais perdido do que cego em tiroteio.
+				<br/>
+				Resposta correta: Não faço ideia do que está acontecendo
+				<br/>
+				Certo:<input type="radio" class="correto" name="p5" id="p5correto"/>
+				Errado:<input type="radio" name="p5" id="p5errado"/>
+				<br/>
+				<br/>
+				<input type="hidden" name="pontuacao" id="pontuacao" value="0"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

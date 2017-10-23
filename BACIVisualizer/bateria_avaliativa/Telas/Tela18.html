@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 18</title>
+		<script type='text/javascript' src="../js/Tela18.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<h3>Praxia Ideomotora</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<form onsubmit="proximo(this);">
+				<div>
+					<h4> Diga: </h4>
+					<p>Agora vou pedir a você que imite os movimentos necessários para executar algumas tarefas cotidianas.</p>
+					<div>
+						<p>
+							<b>Item 1: MANDAR UM BEIJO</b>
+						</p>
+						<input type="radio" name="item1" id="certo1" required/> certo - 1 ponto<br />
+						<input type="radio" name="item1" id="errado1"/> errado - 0 pontos<br />
+					</div>
+					<div>
+						<p>
+							<b>Item 2: BEBER UM COPO DE ÁGUA</b>
+						</p>
+						<input type="radio" name="item2" id="certo2" required/> certo - 1 ponto<br />
+						<input type="radio" name="item2" id="errado2"/> errado - 0 pontos<br />
+					</div>
+					<div>
+						<p>
+							<b>Item 3: VARRER O CHÃO COM VASSOURA</b>
+						</p>
+						<input type="radio" name="item3" id="certo3" required/> certo - 1 ponto<br />
+						<input type="radio" name="item3" id="errado3"/> errado - 0 pontos<br />
+					</div>
+					<div>
+						<p>
+							<b>Item 4: FOLHEAR UM LIVRO</b>
+						</p>
+						<input type="radio" name="item4" id="certo4" required/> certo - 1 ponto<br />
+						<input type="radio" name="item4" id="errado4"/> errado - 0 pontos<br />
+					</div>
+					<br />
+					<br />
+				</div>
+				<br/><br/>
+				<div>
+					<p>
+						<b>Sensibilidade à Inferências</b>
+					</p>
+					<p>Diga ao testando:</p>
+					<p>
+						<b>Agora vamos ver como você consegue executar alguns exercícios com as mãos. Por favor, bata 2 vezes na mesa quando eu bater 1 vez</b>
+					</p>
+					<p>Realize a sequência (de treino) 1 batida – 1 batida  – 1 batida</p>
+					<p>Diga ao testando:</p>
+					<p>
+						<b>Agora,bata 1 vez na mesa quando eu bater 2 vezes</b>
+					</p>
+					<p>Realize a sequência (de treino) 2 batidas – 2 batidas  – 2 batidas</p>
+					<p>Depois que o avaliando realizar a tarefa corretamente, diga ao testando:</p>
+					<p>
+						<b>Agora,vamos fazer uma nova sequência</b>
+					</p>
+					<p>Realize a sequência: <b>2 – 1 – 1 – 2 – 2 – 2 – 1 – 1 – 2 – 1</b>
+					</p>
+					<p>Pontuação: </p>
+					<input type="radio" name="sensibilidade" id="sens3" required/> 3 pontos – o testando acertou toda a sequência <br />
+					<input type="radio" name="sensibilidade" id="sens2"/> 2 pontos – o testando apresentou até 2 erros na sequência <br />
+					<input type="radio" name="sensibilidade" id="sens1"/> 1 ponto – o testando apresentou 3 erros na sequência  <br />
+					<input type="radio" name="sensibilidade" id="sens0"/> 0 pontos – o testando apresentou 4 erros ou mais na sequência <br />
+					<br />
+					<br />
+				</div>
+				<br/><br/>
+				<div>
+					<p>
+						<b>Controle Inibitório</b>
+					</p>
+					<p>Diga ao testando:</p>
+					<p>
+						<b>Agora nossa regra vai mudar. Por favor, bata 1 vez na mesa quando eu bater 1 vez</b>
+					</p>
+					<p>Realize a sequência (de treino) 1 batida – 1 batida  – 1 batida</p>
+					<p>Depois que o avaliando realizar a tarefa corretamente, diga ao testando:</p>
+					<p>
+						<b>Agora, não bata na mesa quando eu bater 2 vezes</b>
+					</p>
+					<p>Realize a sequência (de treino) 2 batidas – 2 batidas  – 2 batidas</p>
+					<p>Depois que o avaliando realizar a tarefa corretamente, diga ao testando:</p>
+					<p>
+						<b>Agora, vamos fazer uma nova sequência</b>
+					</p>
+					<p>Realize a sequência: <b>1 –  2 – 1 – 1 – 2 – 2 – 2 – 1 – 1 – 2</b>
+					</p>
+					<p>Pontuação: </p>
+					<input type="radio" name="controle" id="cont3" required/> 3 pontos – o testando acertou toda a sequência <br />
+					<input type="radio" name="controle" id="cont2"/> 2 pontos – o testando apresentou até 2 erros na sequência <br />
+					<input type="radio" name="controle" id="cont1"/> 1 ponto – o testando apresentou 3 erros na sequência  <br />
+					<input type="radio" name="controle" id="cont0"/> 0 pontos – o testando apresentou 4 erros ou mais na sequência <br />		
+				</div>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

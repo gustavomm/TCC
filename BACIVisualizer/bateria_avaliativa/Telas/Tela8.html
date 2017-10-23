@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela 8</title> 
+	<script type='text/javascript' src="../js/Tela8.js"></script>	
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  </head>
+
+  <body onload = "carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+		<legend>Paciente: 
+			<a id="nome"> </a>
+			</legend>
+		<form onsubmit="proximo(this);">	
+			<div>
+				Copie o desenho abaixo:
+				<br><br><img src="../images/Tela8.png" height="400" width="700">
+			</div>
+				<br><br>
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button">
+		</form>		
+		</fieldset>
+  </body>
+</html>

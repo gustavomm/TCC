@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 14</title>
+		<script type='text/javascript' src="../js/Tela14.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body onload="carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>Paciente: 
+				<a id="nome"> </a>
+			</legend>
+			<h4 class="center"> Preensão </h4>
+			<br/>
+			<div>
+				<form onsubmit="proximo(this);">
+					<p>Diga ao testando:</p>
+					<p>
+						<b>“Agora vamos fazer outro tipo de movimento. Por favor coloque suas mãos sobre os joelhos, com as palmas viradas para cima”</b>
+					</p>
+					<p> Verifique se o testando está na posição correta. Quando estiver na posição, sem dizer nada, nem olhar para o testando, coloque suas próprias mãos próximas as mãos do testando e toque as palmas da mão do testando. Então diga:</p>
+					<p>
+						<b>“Não encoste nas minhas mãos”</b>
+					</p>
+					<p>Se o testando segurar as suas mãos, afaste-as e peça ao testando </p>
+					<p>
+						<b>“Agora, não encoste nas minhas mãos”</b>
+					</p>
+					<br />
+					<br />
+					<p>Pontuação</p>
+					<input type="radio" name="pontuacao" id="0" required/> 0 pontos – se o testando permanecer passivo <br />
+					<input type="radio" name="pontuacao" id="1"/> 1 ponto – se o comportamento do testando for duvidoso quanto a ajuda ativa <br />
+					<input type="radio" name="pontuacao" id="2"/> 2 pontos – se o testando copiar ativamente o movimento solicitado <br />
+					<input type="radio" name="pontuacao" id="3"/> 3 pontos – o testando não segura a mão do avaliador
+					<br/>
+					<br/>
+					<br/>
+					<br/>			
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br/>
+					<br/>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button"/>	
+				</form>
+			</div>
+		</fieldset>
+	</body>
+</html>

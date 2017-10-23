@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 62</title>
+		<script type='text/javascript' src="../js/Tela62.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Nomeação</h3>
+			<form onsubmit="proximo(this);">
+				<br/>
+				<br/>
+				<img id="imageId" src="../Images/Nomeacao/Carretel.png"/>
+				<br/>
+				Certo:<input type="radio" class="correto" name="p1" id="p1correto"/>
+				Errado:<input type="radio" name="p1" id="p1errado"/>
+
+				<input type="hidden" name="pontuacao" id="pontuacao" value="0"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

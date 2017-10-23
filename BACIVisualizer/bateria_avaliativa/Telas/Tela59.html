@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 59</title>
+		<script type='text/javascript' src="../js/Tela59.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<form onsubmit="proximo(this);">
+				<br/>
+				<br/>
+				<table style="width:100%">
+					<tr>
+						<td width="310"><img height="400" width="300" id="imageId" src="../Images/Memoria/flor.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="flor" id="flor"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/gato.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="gato" id="gato"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/vaso.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="vaso" id="vaso"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/pincel.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="pincel" id="pincel"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/coelho.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="coelho" id="coelho"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/violao.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="violao" id="violao"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/dado.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="dado" id="dado"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/batom.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="batom" id="batom"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/prato.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="prato" id="prato"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/gude.png"/></td> 
+						<td>
+							<input type="checkbox" class="correto" name="gude" id="gude"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/copo.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="copo" id="copo"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/livro.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="livro" id="livro"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/boneca.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="boneca" id="boneca"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/escova.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="escova" id="escova"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/faca.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="faca" id="faca"/>
+						</td>
+					</tr>
+					<tr>
+						<td><img height="400" width="300" id="imageId" src="../Images/Memoria/maca.jpg"/></td> 
+						<td>
+							<input type="checkbox" name="maca" id="maca"/>
+						</td>
+					</tr>
+				</table>
+				<input type="hidden" name="pontuacao" id="pontuacao"/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 19</title>
+		<script type='text/javascript' src="../js/Tela19.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3 class="center">Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+
+			<br/>
+			<form onsubmit="proximo(this);">
+				<div>
+					<h4> Encadeamento De Pensamento </h4>
+					<br/>
+					<p> Diga ao testando: </p>
+					<p>
+						<b>“Vou mostrar 4 imagens para você. As imagens devem formar uma história, mas podem estar fora de ordem. Por favor olhe com atenção, ponha as imagens em ordem e conte a história que elas contam”</b>
+					</p>
+					<p> Apenas após esperar que o testando organize as figuras e conte a história deixe de mostrar as figuras. </p>
+					<p> Se o testando não conhecer a história ou não se lembrar, leia para ele esse resumo:</p>
+					<p>
+						<b>Essa é a história de Chapeuzinho Vermelho. Ela ia a casa de sua avó levar doces. O caminho da casa da avó passava por uma floresta. Nessa floresta havia um lobo que viu a menina e resolveu comê-la. O lobo se disfarçou de vovozinha para enganar a menina e comê-la. Ela chega na casa da avó, vê o lobo vestido de vovozinha e fica com medo. Mas o caçador chega, espanta o lobo e a menina e a avó ficam felizes.</b>
+					</p>
+				</div>
+				<br/>
+				<br/>
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

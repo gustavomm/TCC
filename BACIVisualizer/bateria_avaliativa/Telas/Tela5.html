@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela 5</title>   
+	<script type='text/javascript' src="../js/Tela5.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  </head>
+
+  <body onload="carregar_dados();">
+		<h2 class="center">BACI</h2>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>Paciente: 
+					<a id="nome"> </a>
+					</legend>
+			<form onsubmit="proximo(this);">		
+				<h3>Mini-exame do Estado Mental (MEEM)</h3>
+				<div onClick="calcular_orientacao();">
+					<h4 class="center">A - Orientação Espaço e Tempo</h4><br/>
+					<div>
+						Qual é o dia da semana?	<br/>
+					  <input type="radio" name="diaSemana" id="semanaNao" value="semanaNao" required> resposta errada<br/>
+					  <input type="radio" name="diaSemana" id="semanaSim" value="semanaSim"> resposta correta<br/>
+					</div><br/>
+					<div>
+						Que dia do mês é hoje?	<br/>
+					  <input type="radio" name="diaMes" id="mesNao" value="mesNao" required> resposta errada<br/>
+					  <input type="radio" name="diaMes" id="mesSim" value="mesSim"> resposta correta<br/>
+					</div><br/>	
+					<div>
+						Em que ano estamos?	<br/>
+					  <input type="radio" name="ano" id="anoNao" value="anoNao" required> resposta errada<br/>
+					  <input type="radio" name="ano" id="anoSim" value="anoSim"> resposta correta<br/>
+					</div><br/>
+					<div>
+						Sem olhar no relógio, você acha que são que horas agora (aproximadamente)?<br/>
+					  <input type="radio" name="horas" id="horasNao" value="horasNao" required> resposta errada<br/>
+					  <input type="radio" name="horas" id="horasSim" value="horasSim"> resposta correta<br/>
+					</div><br/>
+					<div>
+						Você sabe onde estamos? 	<br/>
+					  <input type="radio" name="ondeEstamos" id="ondeNao" value="ondeNao" required> resposta errada<br/>
+					  <input type="radio" name="ondeEstamos" id="ondeSim" value="ondeSim"> resposta correta<br/>
+					</div><br/>
+					<div>
+						Que local é esse?	<br/>
+					  <input type="radio" name="local" id="localNao" value="localNao" required> resposta errada <br/>
+					  <input type="radio" name="local" id="localSim" value="localSim"> resposta correta <br/>
+					</div><br/>
+					<div>
+						Instituição (casa, rua)?	<br/>
+					  <input type="radio" name="instituicao" id="instNao" value="instNao" required> resposta errada <br/>
+					  <input type="radio" name="instituicao" id="instSim" value="instSim"> resposta correta <br/>
+					</div><br/>
+					<div>
+						Em que Bairro?	<br/>
+					  <input type="radio" name="bairro" id="bairroNao" value="bairroNao" required> resposta errada <br/>
+					  <input type="radio" name="bairro" id="bairroSim" value="bairroSim"> resposta correta <br/>
+					</div><br/>
+					<div>
+						Em que Cidade?   	<br/>
+					  <input type="radio" name="cidade" id="cidadeNao" value="cidadeNao" required> resposta errada <br/>
+					  <input type="radio" name="cidade" id="cidadeSim" value="cidadeSim"> resposta correta <br/>
+					</div><br/>
+					<div>
+						Em que Estado? 	<br/>
+					  <input type="radio" name="estado" id="estadoNao" value="estadoNao" required> resposta errada <br/>
+					  <input type="radio" name="estado" id="estadoSim" value="estadoSim"> resposta correta<br/>
+					</div><br/>
+					
+				</div><br/>
+				
+				<div>
+					<h4 class="center">B - Registros (Estabeleça um ponto para cada resposta correta) </h4></br>
+					Ouça essas palavras e depois as repita:<br/>
+					<audio controls>
+					<source src="" type="audio/mp3">
+						Your browser does not support the audio element.
+					</audio><br/><br/>
+					Total de acertos:
+					<select name="totalAcerto" id="totalAcerto" required>
+						 <option id="ac0" value="ac0">0</option>
+						 <option id="ac1" value="ac1">1</option>
+						 <option id="ac2" value="ac2">2</option>
+						 <option id="ac3" value="ac3">3</option>
+					</select>
+				</div><br/>
+				
+				<div>
+					<h4 class="center" onClick="calcular_atencao();">C - Atenção e cálculo </h4>
+					<div> 
+						100 - 7 = 93<br/>
+						<input type="radio" name="calc1" id="calc1Nao" value="calc1Nao" required> resposta errada<br/>
+					  	<input type="radio" name="calc1" id="calc1Sim" value="calc1Sim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						93 - 7 = 86<br/>
+						<input type="radio" name="calc2" id="calc2Nao" value="calc2Nao" required> resposta errada<br/>
+					  	<input type="radio" name="calc2" id="calc2Sim" value="calc2Sim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						86 - 7 = 79<br/>
+						<input type="radio" name="calc3" id="calc3Nao" value="calc3Nao" required> resposta errada<br/>
+					  	<input type="radio" name="calc3" id="calc3Sim" value="calc3Sim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						79 - 7 = 72<br/>
+						<input type="radio" name="calc4" id="calc4Nao" value="calc4Nao" required> resposta errada<br/>
+					  	<input type="radio" name="calc4" id="calc4Sim" value="calc4Sim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						72 - 7 = 65<br/>
+						<input type="radio" name="calc5" id="calc5Nao" value="calc5Nao" required> resposta errada<br/>
+					  	<input type="radio" name="calc5" id="calc5Sim" value="calc5Sim"> respota correta<br/>
+					</div><br/>
+					
+				</div><br/>
+				
+				<div>
+					<h4 class="center">D - Lembranças (memória de evocação) </h4>
+					Pergunte o nome das 3 palavras ouvidas antes das contas. Registre um ponto para cada palavra corretamente recordada
+					<select name="memoria" id="memoria" required>
+						 <option id="mem0" value="mem0">0</option>
+						 <option id="mem1" value="mem1">1</option>
+						 <option id="mem2" value="mem2">2</option>
+						 <option id="mem3" value="mem3">3</option>
+					</select>					
+				</div><br/>
+				
+				<div onClick="calcular_linguagem();">
+					<h4 class="center">E - Linguagem </h4>
+					<div> 
+						Apontando para um lápis, pergunte o que é o objeto:<br/>
+						<input type="radio" name="lapis" id="lapisNao" value="lapisNao" required> resposta errada<br/>
+					  	<input type="radio" name="lapis" id="lapisSim" value="lapisSimSim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						Apontando para um relógio, pergunte o que é o objeto:<br/>
+						<input type="radio" name="relogio" id="relogioNao" value="relogioNao" required> resposta errada<br/>
+					  	<input type="radio" name="relogio" id="relogioSim" value="relogioSim"> respota correta<br/>
+					</div><br/>
+					<div> 
+						Peça ao avaliando que repita a frase "<b>nem aqui, nem ali, nem lá</b>"<br/>
+						<input type="radio" name="frase" id="fraseNao" value="fraseNao" required> repetiu errado / não repetiu<br/>
+					  	<input type="radio" name="frase" id="fraseSim" value="fraseSim"> repetiu corretamente<br/>
+					</div><br/>
+					
+					Peça ao avaliando que:
+					<br/><b>Pegue o papel com a mão direita. <br/>Dobre o papel ao meio. <br/>Coloque o papel na mesa.</b> <br/>(Estabeleça um ponto para cada atividade corretamente desempenhada)
+					<br/><select name="papel" id="papel" required>
+						 <option id="pa0" value="pa0">0</option>
+						 <option id="pa1" value="pa1">1</option>
+						 <option id="pa2" value="pa2">2</option>
+						 <option id="pa3" value="pa3">3</option>
+					</select>
+					
+				</div><br/>
+				<div>
+					<h3>Pontuação total do MEEM = 18<h3>
+					<h3 id="orientacao"><h3>
+					<h3 id="atencao"><h3>
+					<h3 id="linguagem"><h3>
+				</div>
+				<br/><br/>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				 <br/><br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button">
+			</form>
+		</fieldset>   
+  </body>
+</html>

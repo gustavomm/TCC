@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 28</title>
+	<script type='text/javascript' src="../js/Tela28.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body onload="carregar_dados();">
+        <h3>Nome do Instrumento</h3>
+        <h3>Porcentagem de itens respondidos</h3>
+        <fieldset>
+		    <legend>
+                Paciente:
+                <a id="nome"> </a>
+            </legend>
+                <form onsubmit="proximo(this);">
+                    <img src="../images/tela28.png" height="264" width="438">
+					<div>
+						Iguais: <input type="radio" name="quadrado" id="maior" required/><br/>
+						Diferentes: <input type="radio" name="quadrado" id="menor"/>
+					</div>                    
+					<br><br>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br><br>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button">
+                </form>
+        </fieldset>
+</body>
+</html>

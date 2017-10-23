@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 58</title>
+		<script type='text/javascript' src="../js/Tela58.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();">
+		<h3>Nome do Instrumento</h3>
+		<h3>Porcentagem de itens respondidos</h3>
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<form onsubmit="proximo(this);">
+				<h3>Cotação Memória Não-verbal de longo prazo</h3>
+				<br/>
+				<br/>
+				<table style="width:100%">
+					<tr>
+						<td>
+							<b>3a Lista</b>
+						</td> 
+						<td>
+							<b>Palavras Recordadas</b>
+						</td>
+					</tr>
+					<tr>
+						<td>Flor</td> 
+						<td>
+							<input type="checkbox" name="Flor" id="Flor"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Gato</td> 
+						<td>
+							<input type="checkbox" name="Gato" id="Gato"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Vaso</td> 
+						<td>
+							<input type="checkbox" name="Vaso" id="Vaso"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Pincel</td> 
+						<td>
+							<input type="checkbox" name="Pincel" id="Pincel"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Coelho</td> 
+						<td>
+							<input type="checkbox" name="Coelho" id="Coelho"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Violao</td> 
+						<td>
+							<input type="checkbox" name="Violao" id="Violao"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Dado</td> 
+						<td>
+							<input type="checkbox" name="Dado" id="Dado"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Batom</td> 
+						<td>
+							<input type="checkbox" name="Batom" id="Batom"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Prato</td> 
+						<td>
+							<input type="checkbox" name="Prato" id="Prato"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Bola de Gude</td> 
+						<td>
+							<input type="checkbox" name="Gude" id="Gude"/>
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

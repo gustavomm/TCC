@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Tela 44</title>
+			<script type='text/javascript' src="../js/Tela44.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		</head>
+
+		<body onload="carregar_dados();">
+			<h3>Nome do Instrumento</h3>
+			<h3>Porcentagem de itens respondidos</h3>
+			<fieldset>
+				<legend>
+                Paciente:
+					<a id="nome"> </a>
+				</legend>
+				<form onsubmit="proximo(this);">
+				<h3>Memória – recordação imediata</h3></br></br>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<b>1ª lista</b>
+							</td> 
+							<td>
+								<b>Palavras recordadas</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<audio controls>
+									<source src="" type="audio/mp3"/>
+										Your browser does not support the audio element.
+								</audio>
+							</td>
+						</tr>
+						<tr>
+							<td>Boneca</td> 
+							<td>
+								<input type="checkbox" name="livro" id="livro"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Estrela</td> 
+							<td>
+								<input type="checkbox" name="mesa" id="mesa"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Cavalo</td> 
+							<td>
+								<input type="checkbox" name="sapato" id="sapato"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Mesa</td> 
+							<td>
+								<input type="checkbox" name="arvore" id="arvore"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Pato</td> 
+							<td>
+								<input type="checkbox" name="estrela" id="estrela"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Janela</td> 
+							<td>
+								<input type="checkbox" name="copo" id="copo"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Árvore</td> 
+							<td>
+								<input type="checkbox" name="boneca" id="boneca"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Livro</td> 
+							<td>
+								<input type="checkbox" name="pato" id="pato"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Sapato</td> 
+							<td>
+								<input type="checkbox" name="cavalo" id="cavalo"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Copo</td> 
+							<td>
+								<input type="checkbox" name="janela" id="janela"/>
+							</td>
+						</tr>
+					</table>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<b>2ª lista</b>
+							</td> 
+							<td>
+								<b>Palavras recordadas</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<audio controls>
+									<source src="" type="audio/mp3"/>
+										Your browser does not support the audio element.
+								</audio>
+							</td>
+						</tr>
+						<tr>
+							<td>Livro</td> 
+							<td>
+								<input type="checkbox" name="livro2" id="livro2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Mesa</td> 
+							<td>
+								<input type="checkbox" name="mesa2" id="mesa2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Sapato</td> 
+							<td>
+								<input type="checkbox" name="sapato2" id="sapato2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Árvore</td> 
+							<td>
+								<input type="checkbox" name="arvore2" id="arvore2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Estrela</td> 
+							<td>
+								<input type="checkbox" name="estrela2" id="estrela2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Copo</td> 
+							<td>
+								<input type="checkbox" name="copo2" id="copo2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Boneca</td> 
+							<td>
+								<input type="checkbox" name="boneca2" id="boneca2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Pato</td> 
+							<td>
+								<input type="checkbox" name="pato2" id="pato2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Cavalo</td> 
+							<td>
+								<input type="checkbox" name="cavalo2" id="cavalo2"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Janela</td> 
+							<td>
+								<input type="checkbox" name="janela2" id="janela2"/>
+							</td>
+						</tr>
+					</table>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<b>3ª lista</b>
+							</td> 
+							<td>
+								<b>Palavras recordadas</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<audio controls>
+									<source src="" type="audio/mp3"/>
+										Your browser does not support the audio element.
+								</audio>
+							</td>
+						</tr>
+						<tr>
+							<td>Árvore</td> 
+							<td>
+								<input type="checkbox" name="livro3" id="livro3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Pato</td> 
+							<td>
+								<input type="checkbox" name="mesa3" id="mesa3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Copo</td> 
+							<td>
+								<input type="checkbox" name="sapato3" id="sapato3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Janela</td> 
+							<td>
+								<input type="checkbox" name="arvore3" id="arvore3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Cavalo</td> 
+							<td>
+								<input type="checkbox" name="estrela3" id="estrela3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Sapato</td> 
+							<td>
+								<input type="checkbox" name="copo3" id="copo3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Livro</td> 
+							<td>
+								<input type="checkbox" name="boneca3" id="boneca3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Mesa</td> 
+							<td>
+								<input type="checkbox" name="pato3" id="pato3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Boneca</td> 
+							<td>
+								<input type="checkbox" name="cavalo3" id="cavalo3"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Estrela</td> 
+							<td>
+								<input type="checkbox" name="janela3" id="janela3"/>
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+					<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+					<br><br>			
+					<button type="button" onclick="voltar()" class="button">Voltar</button>
+					<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+					<input type="submit" value="Submit/Próximo" class="button">
+					</form>
+				</fieldset>
+			</body>
+		</html>
+		
