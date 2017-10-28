@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tela 104</title>
+		<script type='text/javascript' src="../js/Tela104.js"></script>
+			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body onload="carregar_dados();" onclick="revelaform()">
+		<fieldset>
+			<legend>
+                Paciente:
+				<a id="nome"> </a>
+			</legend>
+			<h3>Fluência Verbal – Rota fonológica</h3>
+			<p>Agora eu vou marcar o tempo de 1 minuto e peço que você fale todas as palavras que conseguir se lembrar que comecem com a letra F. </p>
+			<p>Não serão contadas conjugações verbais. Por exemplo, se fosse com a letra V e você começasse a falar VIAJAR, VIAJANDO, VIAJEI, eu contaria apenas 1 palavra. </p>
+			<p>Também não serão contados nomes de pessoas e palavras repetidas.</p>
+			<form id="form" onsubmit="proximo(this);">
+				<br/>
+				<button type="button" class="button" onclick="startTimer()">Timer</button>
+				<br/>
+				<br/>
+				<div>Tempo = <span id="timer">01:00</span></div>
+				<br/>
+				<button type="button" class="button" onclick="acerto()">Acerto</button>
+				<button type="button" class="button" onclick="erro()">Erro</button>
+				<input type="text" name="pontuacao" id="pontuacao" value="0" readonly/>
+				<br/>
+				<br/>
+				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+				<br/>
+				<br/>			
+				<button type="button" onclick="voltar()" class="button">Voltar</button>
+				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
+				<input type="submit" value="Submit/Próximo" class="button"/>
+			</form>
+		</fieldset>
+	</body>
+</html>
