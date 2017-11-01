@@ -4,6 +4,8 @@
 		<meta charset="UTF-8"/>
 		<title>Tela 105</title>
 		<script type='text/javascript' src="../js/Tela105.js"></script>
+		<script type='text/javascript' src="../js/jquery-3.2.1.min.js"></script>
+		<script type='text/javascript' src="../js/xml2json.min.js"></script>
 			<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	</head>
 
@@ -29,11 +31,12 @@
 				<br/>
 				<br/>
 				<button type="button" onclick="salvar_sair()" class="button">Salvar/Sair</button>
+
 				<br/>
 				<br/>			
 				<button type="button" onclick="voltar()" class="button">Voltar</button>
 				<button type="button" onclick="location.href= '../Paciente.html'" class="button">Sair</button>
-				<input type="submit" value="Submit/Próximo" class="button"/>
+				<button type="button" onclick="geraXML()" class="button">GERA XML</button>
 			</form>
 		</fieldset>
 	</body>

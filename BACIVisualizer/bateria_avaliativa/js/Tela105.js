@@ -149,3 +149,17 @@ function erro(){
 	}
 	document.getElementById('pontuacao').value = pontos;
 }
+
+function geraXML(){
+	salvar();
+	var x2js = new X2JS();
+	var json = JSON.parse(localStorage.getItem('Pacientes'));
+
+	var xmlAsStr = x2js.json2xml_str( json );
+	
+
+	var newwindow = window.open();
+                      newwindow.open('data:text/xml;charset=utf-8,<?xml version="1.0" encoding="UTF-8"?>' + xmlAsStr );
+                      newwindow.write('data:text/xml;charset=utf-8,<?xml version="1.0" encoding="UTF-8"?>' + xmlAsStr );
+                      newwindow.close();
+}
